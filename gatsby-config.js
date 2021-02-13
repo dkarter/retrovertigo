@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: 'Retrovertigo',
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: 'Dorian Karter',
+      summary: 'Sr. Software Engineer',
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description:
+      'Thoughts & TILs about Elixir, Elm, React, JavaScript and other things.',
+    siteUrl: 'https://doriankarter.com/',
     social: {
-      twitter: `kylemathews`,
+      twitter: 'dorian_escplan',
     },
   },
   plugins: [
