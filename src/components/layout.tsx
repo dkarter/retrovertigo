@@ -1,7 +1,13 @@
 import React from 'react';
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'gatsby'. Did you mean to set t... Remove this comment to see the full error message
 import { Link } from 'gatsby';
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({
+  location,
+  title,
+  children
+}: any) => {
+  // @ts-expect-error ts-migrate(2304) FIXME: Cannot find name '__PATH_PREFIX__'.
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location.pathname === rootPath;
   let header;

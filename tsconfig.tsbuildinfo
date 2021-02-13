@@ -141,6 +141,11 @@
         "signature": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
         "affectsGlobalScope": true
       },
+      "./public/render-page.tsx": {
+        "version": "68d9289a6ef86b187cb1ab1e333623f3d37f93063bf37b3f219b98cacf5ba007",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "affectsGlobalScope": true
+      },
       "./node_modules/@types/react/global.d.ts": {
         "version": "ecf78e637f710f340ec08d5d92b3f31b134a46a4fcf2e758690d8c46ce62cba6",
         "signature": "ecf78e637f710f340ec08d5d92b3f31b134a46a4fcf2e758690d8c46ce62cba6",
@@ -156,9 +161,39 @@
         "signature": "666fe380406dec2e0d3f05a0089b6a9f5a363dfd8e902a09552e2d27a50a8ea4",
         "affectsGlobalScope": true
       },
+      "./src/components/bio.tsx": {
+        "version": "2c51f3d9c3b35935f34f02ff05bd77d3b56075a65b37eaa809024d70a315c9ab",
+        "signature": "d9259f65dae60d34427087cd32a12bcbff564c2b1f512e3d1ffa6ca76ca4b3f4",
+        "affectsGlobalScope": false
+      },
+      "./src/components/layout.tsx": {
+        "version": "c5b98b19f4a74bab5df15088dce6e35d95734cacaed31a2e289610ff35ebeb03",
+        "signature": "7de91aad5460796d4266da817cf7843f2f29270ab949303292d4325b7290c2cb",
+        "affectsGlobalScope": false
+      },
+      "./src/components/seo.tsx": {
+        "version": "23abcea946d8bcea51953be5ccdecf100e64240838af4636738e7f2c5552189d",
+        "signature": "8064e5cd1c785ed786c575e4137bf97be9f77490b45245607f14946f37b33484",
+        "affectsGlobalScope": false
+      },
+      "./src/pages/404.tsx": {
+        "version": "c1189c7d63142cbf8c2b4076e56b4dfb18623e4ff6e1b87dbac1e34ace3e77a0",
+        "signature": "0ae2c871698bcd33822b1b2513bb9e3ba636c4cd5f060735d5d9218ccf78bc6c",
+        "affectsGlobalScope": false
+      },
+      "./src/pages/index.tsx": {
+        "version": "174419a6b78bf8126ae1933be96e7166cbea305736ab63afcfdf0db768396245",
+        "signature": "125aa0fda967598d21c713cf24e1a7f3634ce54b1669e5b4d0caf538ec20c221",
+        "affectsGlobalScope": false
+      },
       "./src/pages/using-typescript.tsx": {
-        "version": "12c5084bb695d2fd1797b3f94d7f025f4fa36ad49a76858ad6aea19822866eef",
+        "version": "3fc19388960d2adc5a8d9d555c59e50b5f0ee179ea828b426eb26673262e10ae",
         "signature": "54d7c6255ee56f2e0e5dfbba331bea0e852319a17c2c7e2db1807e15a6441441",
+        "affectsGlobalScope": false
+      },
+      "./src/templates/blog-post.tsx": {
+        "version": "9783b9149cd9cc3aae37b18e1b9772db78dc35b1af51f625f76ead9ed6b91425",
+        "signature": "21ebfdf6869479bf5729cbebc3f92a97e99a35ad1392d4352a0508375df2ab18",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/node/globals.d.ts": {
@@ -642,7 +677,6 @@
         "lib.es2017.d.ts"
       ],
       "strict": true,
-      "noImplicitAny": true,
       "strictNullChecks": true,
       "strictFunctionTypes": true,
       "strictBindCallApply": true,
@@ -1093,8 +1127,36 @@
       "./node_modules/@types/yargs/index.d.ts": [
         "./node_modules/@types/yargs-parser/index.d.ts"
       ],
-      "./src/pages/using-typescript.tsx": [
+      "./src/components/bio.tsx": [
         "./node_modules/@types/react/index.d.ts"
+      ],
+      "./src/components/layout.tsx": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./src/components/seo.tsx": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./src/pages/404.tsx": [
+        "./node_modules/@types/react/index.d.ts",
+        "./src/components/layout.tsx",
+        "./src/components/seo.tsx"
+      ],
+      "./src/pages/index.tsx": [
+        "./node_modules/@types/react/index.d.ts",
+        "./src/components/bio.tsx",
+        "./src/components/layout.tsx",
+        "./src/components/seo.tsx"
+      ],
+      "./src/pages/using-typescript.tsx": [
+        "./node_modules/@types/react/index.d.ts",
+        "./src/components/layout.tsx",
+        "./src/components/seo.tsx"
+      ],
+      "./src/templates/blog-post.tsx": [
+        "./node_modules/@types/react/index.d.ts",
+        "./src/components/bio.tsx",
+        "./src/components/layout.tsx",
+        "./src/components/seo.tsx"
       ]
     },
     "exportedModulesMap": {
@@ -1663,35 +1725,14 @@
       "./node_modules/typescript/lib/lib.es2020.bigint.d.ts",
       "./node_modules/typescript/lib/lib.es5.d.ts",
       "./node_modules/typescript/lib/lib.esnext.intl.d.ts",
-      [
-        "./src/pages/using-typescript.tsx",
-        [
-          {
-            "file": "./src/pages/using-typescript.tsx",
-            "start": 133,
-            "length": 8,
-            "messageText": "Cannot find module 'gatsby'. Did you mean to set the 'moduleResolution' option to 'node', or to add aliases to the 'paths' option?",
-            "category": 1,
-            "code": 2792
-          },
-          {
-            "file": "./src/pages/using-typescript.tsx",
-            "start": 163,
-            "length": 22,
-            "code": 7016,
-            "category": 1,
-            "messageText": "Could not find a declaration file for module '../components/layout'. '/Users/dorian/dev/web/retrovertigo/src/components/layout.js' implicitly has an 'any' type."
-          },
-          {
-            "file": "./src/pages/using-typescript.tsx",
-            "start": 203,
-            "length": 19,
-            "code": 7016,
-            "category": 1,
-            "messageText": "Could not find a declaration file for module '../components/seo'. '/Users/dorian/dev/web/retrovertigo/src/components/seo.js' implicitly has an 'any' type."
-          }
-        ]
-      ]
+      "./public/render-page.tsx",
+      "./src/components/bio.tsx",
+      "./src/components/layout.tsx",
+      "./src/components/seo.tsx",
+      "./src/pages/404.tsx",
+      "./src/pages/index.tsx",
+      "./src/pages/using-typescript.tsx",
+      "./src/templates/blog-post.tsx"
     ]
   },
   "version": "4.1.5"

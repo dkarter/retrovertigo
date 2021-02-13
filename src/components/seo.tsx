@@ -6,11 +6,23 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'react-helmet'. Did you mean to... Remove this comment to see the full error message
 import { Helmet } from 'react-helmet';
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'gatsby'. Did you mean to set t... Remove this comment to see the full error message
 import { useStaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ description, lang, meta, title }) => {
+type OwnProps = {
+    description?: string;
+    lang?: string;
+    meta?: any[];
+    title: string;
+};
+
+// @ts-expect-error ts-migrate(2456) FIXME: Type alias 'Props' circularly references itself.
+type Props = OwnProps & typeof SEO.defaultProps;
+
+// @ts-expect-error ts-migrate(7022) FIXME: 'SEO' implicitly has type 'any' because it does no... Remove this comment to see the full error message
+const SEO = ({ description, lang, meta, title }: Props) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -79,13 +91,6 @@ SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-};
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 };
 
 export default SEO;

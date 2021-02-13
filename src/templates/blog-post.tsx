@@ -1,11 +1,15 @@
 import React from 'react';
+// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'gatsby'. Did you mean to set t... Remove this comment to see the full error message
 import { Link, graphql } from 'gatsby';
 
 import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-const BlogPostTemplate = ({ data, location }) => {
+const BlogPostTemplate = ({
+  data,
+  location
+}: any) => {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const { previous, next } = data;
