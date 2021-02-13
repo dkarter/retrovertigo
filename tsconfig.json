@@ -27,7 +27,7 @@
 
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist"
+    "outDir": "./.build"
   },
   "exclude": [
     "node_modules",
