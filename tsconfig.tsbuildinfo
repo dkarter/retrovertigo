@@ -1006,8 +1006,13 @@
         "signature": "7de91aad5460796d4266da817cf7843f2f29270ab949303292d4325b7290c2cb",
         "affectsGlobalScope": false
       },
+      "./node_modules/@types/react-helmet/index.d.ts": {
+        "version": "65c8464d522217dd6a443a7cb5e9bc06b6a268f4657a930e345471fa204659a3",
+        "signature": "65c8464d522217dd6a443a7cb5e9bc06b6a268f4657a930e345471fa204659a3",
+        "affectsGlobalScope": false
+      },
       "./src/components/seo.tsx": {
-        "version": "7a2263c0e376bdb339796be054e4d78a4f0f42e266f7f0c519188a11fad15755",
+        "version": "015b174092ecba4207932b088feff54b5a2ba80a607518c15d68132d58bb8ac5",
         "signature": "8064e5cd1c785ed786c575e4137bf97be9f77490b45245607f14946f37b33484",
         "affectsGlobalScope": false
       },
@@ -1928,6 +1933,9 @@
       "./node_modules/@types/reach__router/index.d.ts": [
         "./node_modules/@types/react/index.d.ts"
       ],
+      "./node_modules/@types/react-helmet/index.d.ts": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
       "./node_modules/@types/react/index.d.ts": [
         "./node_modules/@types/prop-types/index.d.ts",
         "./node_modules/@types/react/global.d.ts",
@@ -2776,6 +2784,7 @@
         "./node_modules/gatsby/index.d.ts"
       ],
       "./src/components/seo.tsx": [
+        "./node_modules/@types/react-helmet/index.d.ts",
         "./node_modules/@types/react/index.d.ts",
         "./node_modules/gatsby/index.d.ts"
       ],
@@ -3207,6 +3216,9 @@
         "./node_modules/@types/node/stream.d.ts"
       ],
       "./node_modules/@types/reach__router/index.d.ts": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./node_modules/@types/react-helmet/index.d.ts": [
         "./node_modules/@types/react/index.d.ts"
       ],
       "./node_modules/@types/react/index.d.ts": [
@@ -4136,6 +4148,7 @@
       "./node_modules/@types/prop-types/index.d.ts",
       "./node_modules/@types/q/index.d.ts",
       "./node_modules/@types/reach__router/index.d.ts",
+      "./node_modules/@types/react-helmet/index.d.ts",
       "./node_modules/@types/react/global.d.ts",
       "./node_modules/@types/react/index.d.ts",
       "./node_modules/@types/readable-stream/index.d.ts",

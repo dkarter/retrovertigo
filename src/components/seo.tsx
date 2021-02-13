@@ -6,7 +6,6 @@
  */
 
 import React from 'react';
-// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'react-helmet'. Did you mean to... Remove this comment to see the full error message
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
@@ -47,7 +46,7 @@ const SEO = ({ description, lang, meta, title }: Props) => {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : undefined}
       meta={[
         {
           name: `description`,
