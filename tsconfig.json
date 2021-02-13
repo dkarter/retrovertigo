@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
     "incremental": true,
-    "target": "esnext",
-    "module": "esnext",
+    "target": "ES5",
+    "module": "CommonJS",
     "jsx": "react",
     "lib": ["dom", "es2017"],
 
+    "allowJs": true,
+
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
     "strict": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
@@ -23,5 +27,11 @@
 
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "gatsby-node.js",
+    "gatsby-config.js",
+    "gatsby-browser.js"
+  ]
 }

@@ -6,9 +6,7 @@
  */
 
 import React from 'react';
-// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'gatsby'. Did you mean to set t... Remove this comment to see the full error message
 import { useStaticQuery, graphql } from 'gatsby';
-// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'gatsby-image'. Did you mean to... Remove this comment to see the full error message
 import Image from 'gatsby-image';
 
 const Bio = () => {

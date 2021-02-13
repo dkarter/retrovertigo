@@ -8,14 +8,13 @@
 import React from 'react';
 // @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'react-helmet'. Did you mean to... Remove this comment to see the full error message
 import { Helmet } from 'react-helmet';
-// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'gatsby'. Did you mean to set t... Remove this comment to see the full error message
 import { useStaticQuery, graphql } from 'gatsby';
 
 type OwnProps = {
-    description?: string;
-    lang?: string;
-    meta?: any[];
-    title: string;
+  description?: string;
+  lang?: string;
+  meta?: any[];
+  title: string;
 };
 
 // @ts-expect-error ts-migrate(2456) FIXME: Type alias 'Props' circularly references itself.

@@ -1,6 +1,5 @@
 // If you don't want to use TypeScript you can delete this file!
 import React from 'react';
-// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module 'gatsby'. Did you mean to set t... Remove this comment to see the full error message
 import { PageProps, Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
