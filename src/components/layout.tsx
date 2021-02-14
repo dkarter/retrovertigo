@@ -1,7 +1,14 @@
 import React from 'react';
+import { WindowLocation } from '@reach/router';
 import { Link } from 'gatsby';
 
-const Layout = ({ location, title, children }: any) => {
+type Props = {
+  location: WindowLocation;
+  title: string;
+  children: React.ReactNode;
+};
+
+const Layout: React.FC<Props> = ({ location, title, children }) => {
   // @ts-expect-error ts-migrate(2304) FIXME: Cannot find name '__PATH_PREFIX__'.
   const rootPath = `${__PATH_PREFIX__}/`;
   const isRootPath = location.pathname === rootPath;

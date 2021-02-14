@@ -9,19 +9,30 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-type OwnProps = {
+type SEOQueryResult = {
+  site: {
+    siteMetadata?: {
+      author?: {
+        name?: string;
+        summary?: string;
+      };
+      description?: string;
+      social: {
+        twitter: string;
+      };
+      title: string;
+    };
+  };
+};
+
+type Props = {
   description?: string;
   lang?: string;
-  meta?: any[];
   title: string;
 };
 
-// @ts-expect-error ts-migrate(2456) FIXME: Type alias 'Props' circularly references itself.
-type Props = OwnProps & typeof SEO.defaultProps;
-
-// @ts-expect-error ts-migrate(7022) FIXME: 'SEO' implicitly has type 'any' because it does no... Remove this comment to see the full error message
-const SEO = ({ description, lang, meta, title }: Props) => {
-  const { site } = useStaticQuery(
+const SEO: React.FC<Props> = ({ description, lang, title }) => {
+  const { site } = useStaticQuery<SEOQueryResult>(
     graphql`
       query {
         site {
@@ -37,8 +48,42 @@ const SEO = ({ description, lang, meta, title }: Props) => {
     `
   );
 
-  const metaDescription = description || site.siteMetadata.description;
+  const metaDescription = description || site.siteMetadata?.description;
   const defaultTitle = site.siteMetadata?.title;
+  const meta = [
+    {
+      name: 'description',
+      content: metaDescription,
+    },
+    {
+      property: 'og:title',
+      content: title,
+    },
+    {
+      property: 'og:description',
+      content: metaDescription,
+    },
+    {
+      property: 'og:type',
+      content: 'website',
+    },
+    {
+      name: 'twitter:card',
+      content: 'summary',
+    },
+    {
+      name: 'twitter:creator',
+      content: site.siteMetadata?.social?.twitter || '',
+    },
+    {
+      name: 'twitter:title',
+      content: title,
+    },
+    {
+      name: 'twitter:description',
+      content: metaDescription,
+    },
+  ];
 
   return (
     <Helmet
@@ -47,48 +92,14 @@ const SEO = ({ description, lang, meta, title }: Props) => {
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : undefined}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata?.social?.twitter || ``,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
+      meta={meta}
     />
   );
 };
 
 SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
+  lang: 'en',
+  description: '',
 };
 
 export default SEO;
