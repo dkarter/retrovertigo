@@ -6,7 +6,7 @@ Experiments with words
 
 ## TODO
 - [ ] StyledComponents?
-- [ ] Deploy to Netlify
-- [ ] Custom favicon
+- [X] Deploy to Netlify
+- [X] Custom favicon
 - [ ] Link to TIL posts and integrate them + excerpt (using API)
-- [ ] Create new post script
+- [X] Create new post script
