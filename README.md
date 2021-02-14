@@ -7,3 +7,5 @@ Experiments with words
 ## TODO
 - [ ] StyledComponents?
 - [ ] Deploy to Netlify
+- [ ] Custom favicon
+- [ ] Link to TIL posts and integrate them + excerpt (using API)
