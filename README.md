@@ -9,3 +9,4 @@ Experiments with words
 - [ ] Deploy to Netlify
 - [ ] Custom favicon
 - [ ] Link to TIL posts and integrate them + excerpt (using API)
+- [ ] Create new post script

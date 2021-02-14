@@ -36,22 +36,25 @@ This time I chose [Gatsby](https://www.gatsbyjs.com/) - a [JAMStack](https://jam
 
 The first iteration is going to look pretty simple as I went with the most basic blog template. A lot of the Gatsby templates out there are written in JavaScript, no StyledComponents, built around a specific CMS that costs money and are painful to setup. It made me give up multiple times, until eventually I took a page from [Jake Worth](https://jakeworth.com)'s book and decided to go with the most basic template, [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog).
 
+## Writer's block? Nah, just ship it!
+
 For some people writing comes naturally, and publishing something is an after thought. I am not one of those people! For me writing has always been a struggle, and the longer the piece, the greater the resistance I felt when writing it.
 
 > The idea was to write short, bite sized posts breaking down our lessons learned from the day's work
 
-When I worked at [Hashrocket](https://hashrocket.com) we had a micro blog platform system called TIL, short for Today I Learned. The idea was to write short, bite sized posts breaking down our lessons learned from the day's work. I remember my first TIL post, I was second guessing every sentence, every word, double and triple checking my spelling. I was missing the point! 
+When I worked at [Hashrocket](https://hashrocket.com) we had a micro blog platform system called [TIL](https://til.hashrocket.com/), short for "Today I Learned". The idea was to write short, bite sized posts breaking down our lessons learned from the day's work.
 
-> get something out there, typos and all..
+I remember my first TIL post, I was second guessing every sentence, every word, double and triple checking my spelling. I was missing the point! 
+
+> Get something out there, typos and all.. Perfect is the enemy of done!
 
 When I asked a co-worker (Chris Erin) to review one of my posts he shared his philosophy on TILs and publishing in general, which resonated with me: Chris' philosophy was to get something out there, typos and all.. Someone else posted about the same thing? Doesn't matter, write it in your own words, with your own perspectives and tone. When you write something, or teach something, you are more likely to remember it and feel that you had mastered the subject. And, like many other worthwhile endeavors, the more you write and publish - the easier it becomes and the better you get at it. In other words, "Perfect is the enemy of done!"
 
 > Unlike a printed publication, online publications and software can be iterated upon after shipping the initial release.
 
-
 This is the mindset that I want to remind myself of and continue to embrace for my personal / professional work, in particular publishing. This is the beauty of software and the internet as a publishing platform. Unlike a printed publication, online publications and software can be iterated upon after shipping the initial release.
 
-That being said, this is the first iteration, it is not perfect by any stretch of the imagination. I did decide on a few things that I cannot go live without, and needed to be improved in my fork of gatsby-starter-blog:
+The same applies to my personal blog. In its first iteration, it will not be perfect by any stretch of the imagination, and that's OK. I did decide on a few things that I cannot go live without, and needed to be improved in my fork of gatsby-starter-blog:
 
 #### Formatter: Prettier
 
@@ -68,4 +71,4 @@ Since the original gatsby-starter-blog is written with JavaScript, I used [Airbn
 ESLint was not configured out of the box for the template. To me this is a useful tool that I install on every JS/TS project when possible. It helps keep code consistent and consistency makes reading code easier and more predictable. It can also catch potential errors by enforcing best practices.
 
 ## Conclusion
-There it is, typos and all... a WIP! It may not be perfect, I still have many TODOs, but I'm happy to be publishing again and learning in public. Hopefully Gatsby / React and TypeScript don't become outdated by the time I write the next one 😅. Cheers!
+There it is, typos and all... a WIP! It may not be perfect, I still have many TODOs, but I'm pretty happy with the result, and excited to be publishing again and learning in public. Hopefully Gatsby / React and TypeScript don't become outdated by the time I write the next one 😅. Cheers!
