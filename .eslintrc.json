@@ -1,0 +1,22 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "@typescript-eslint"],
+  "extends": ["plugin:react/recommended", "eslint:recommended"],
+  "rules": {
+    "react/prop-types": 0,
+    "arrow-parens": 0
+  },
+  "globals": {
+    "__PATH_PREFIX__": false
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

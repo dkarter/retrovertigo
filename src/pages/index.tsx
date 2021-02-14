@@ -29,7 +29,7 @@ type DataProps = {
 };
 
 const BlogIndex: React.FC<PageProps<DataProps>> = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`;
+  const siteTitle = data.site.siteMetadata?.title || 'Title';
   const posts = data.allMarkdownRemark.nodes;
 
   if (posts.length === 0) {
@@ -38,9 +38,9 @@ const BlogIndex: React.FC<PageProps<DataProps>> = ({ data, location }) => {
         <SEO title="All posts" />
         <Bio />
         <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
+          No blog posts found. Add markdown posts to &quot;content/blog&quot;
+          (or the directory you specified for the
+          &quot;gatsby-source-filesystem&quot; plugin in gatsby-config.js).
         </p>
       </Layout>
     );
