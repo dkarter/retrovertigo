@@ -3,12 +3,13 @@ module.exports = {
     title: 'Retrovertigo',
     author: {
       name: 'Dorian Karter',
-      summary: 'Sr. Software Engineer',
+      summary: 'a Sr. Software Engineer',
     },
     description:
       'Thoughts & TILs about Elixir, Elm, React, JavaScript and other things.',
     siteUrl: 'https://doriankarter.com/',
     social: {
+      github: 'dkarter',
       twitter: 'dorian_escplan',
     },
   },
