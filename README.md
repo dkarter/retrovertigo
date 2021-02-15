@@ -10,3 +10,5 @@ Experiments with words
 - [X] Custom favicon
 - [ ] Link to TIL posts and integrate them + excerpt (using API)
 - [X] Create new post script
+- [ ] Add about me page
+- [ ] Add projects page (perhaps use github api?)
