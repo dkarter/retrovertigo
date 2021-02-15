@@ -15,16 +15,15 @@ if (!fs.existsSync(dir)) {
   throw new Error('That post already exists!');
 }
 
-const filename = `${dir}/index.mdx`;
+const filename = `${dir}/index.md`;
 fs.writeFileSync(
   filename,
   `---
 slug: ${slug}
 date: ${date}
 title: "${title}"
-published: false
 ---`,
-  err => {
+  (err) => {
     if (err) {
       // eslint-disable-next-line no-console
       console.log(err);
