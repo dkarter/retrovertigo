@@ -4,9 +4,9 @@ date: 2021-02-28
 title: "Customize Vim's gx mapping"
 ---
 
-One of my favorite Vim mappings is <kbd>g</kbd><kbd>x</kbd>, when hovering a URL with the cursor in normal mode and using this mapping, Vim will open the URL under the cursor with your default browser.
+One of my favorite Vim mappings is <kbd>g</kbd><kbd>x</kbd>. When hovering over a URL with the cursor in normal mode and using this mapping, Vim will open the URL under the cursor with your default browser.
 
-To learn more about this mapping which is part of the built-in NETRW plugin type `:h gx` inside Vim.
+To learn more about this mapping, which is part of the built-in NETRW plugin, type `:h gx` inside Vim.
 
 ## What if we could take this a step further?
 
@@ -14,7 +14,7 @@ When you're in a `package.json` file or `mix.exs`, what if you could press `gx` 
 
 ## JavaScript: package.json + gx
 
-For package.json we will need to parse the package name, then construct the npm url and pass it to `netrw#BrowseX` function, which in turn will open it in the default browser. First let's create a function that will do just that:
+For `package.json` we will need to parse the package name, then construct the npm url and pass it to `netrw#BrowseX` function, which in turn will open it in the default browser. First let's create a function to do just that:
 
 ```vim
 function! PackageJsonGx() abort
@@ -39,7 +39,7 @@ augroup END
 ```
 
 ## Elixir: mix.exs + gx
-Thankfully there is an [Elixir plugin](https://github.com/lucidstack/hex.vim) that will allow us to open the hexdocs.pm page or Github page for the package under the cursor already, so all we have to do is create the mappings to activate whenever we are in a `mix.exs` file.
+Thankfully there is an [Elixir plugin](https://github.com/lucidstack/hex.vim) that will allow us to open the hexdocs.pm page or Github page for the package under the cursor. All we have to do is set the mappings to activate whenever we are in a `mix.exs` file.
 
 First, make sure you install the plugin:
 
@@ -47,7 +47,7 @@ First, make sure you install the plugin:
 Plug 'lucidstack/hex.vim'
 ```
 
-Then add the following to your vimrc to have <kbd>g</kbd><kbd>x</kbd> open the Hex Docs page, and <kbd>g</kbd><kbd>h</kbd> for opening the Github page:
+Then add the following to your vimrc to have <kbd>g</kbd><kbd>x</kbd> open the Hex Docs page, and <kbd>g</kbd><kbd>h</kbd> to open the Github page:
 
 ```vim
 " Elixir mix.exs
@@ -61,7 +61,7 @@ augroup END
 
 
 ## Bonus: VimPlug
-If you're using VimPlug as your Vim plugin manager you can also get the <kbd>g</kbd><kbd>x</kbd> mapping to work inside Plug windows (like the one that opens when you update your plugins with `:PlugUpdate`). This code was originally posted in VimPlug's wiki (and was my inspiration for customizing gx for other scenarios), but I modified it so it also works inside my plugin definition file (`~/.vimrc.bundles`):
+If you're using VimPlug as your Vim plugin manager, you can also get the <kbd>g</kbd><kbd>x</kbd> mapping to work inside Plug windows (like the one that opens when you update your plugins with `:PlugUpdate`). This code was originally posted in VimPlug's wiki (and was my inspiration for customizing gx for other scenarios), but I modified it so it also works inside my plugin definition file (`~/.vimrc.bundles`):
 
 ```vim
 " For VimPlug
@@ -97,4 +97,4 @@ augroup PlugGxGroup
 augroup END
 ```
 
-Hope you find it this post useful and that it inspires you to customize <kbd>g</kbd><kbd>x</kbd> to support your favorite package manager / programming language. If you do write your own customization please [@/DM me on Twitter](https://twitter.com/dorian_escplan) - I'm interested to hear what you come up with.
+Hope you find it this post useful and that it inspires you to customize <kbd>g</kbd><kbd>x</kbd> to support your favorite package manager / programming language. If you do write your own customization please [@/DM me on Twitter](https://twitter.com/dorian_escplan) - I'm interested in hearing what you come up with!
