@@ -10,7 +10,7 @@ To learn more about this mapping which is part of the built-in NETRW plugin type
 
 ## What if we could take this a step further?
 
-When you're in a `package.json` file or `mix.exs`, what if you could press `gx` and have Vim open the npm page or hex.pm page for the package under the cursor? Turns out it's not that hard to do!
+When you're in a `package.json` file or `mix.exs`, what if you could press `gx` and have Vim open the [npmjs.org](https://www.npmjs.com/) or [hexdocs.pm](https://hexdocs.pm/) page for the package under the cursor? Turns out it's not that hard to do!
 
 ## JavaScript: package.json + gx
 
@@ -39,7 +39,7 @@ augroup END
 ```
 
 ## Elixir: mix.exs + gx
-Thankfully there is an [Elixir plugin](https://github.com/lucidstack/hex.vim) that will allow us to open the hex.pm page or Github page for the package under the cursor already, so all we have to do is create the mappings to activate whenever we are in a mix.exs file.
+Thankfully there is an [Elixir plugin](https://github.com/lucidstack/hex.vim) that will allow us to open the hexdocs.pm page or Github page for the package under the cursor already, so all we have to do is create the mappings to activate whenever we are in a `mix.exs` file.
 
 First, make sure you install the plugin:
 
@@ -97,4 +97,4 @@ augroup PlugGxGroup
 augroup END
 ```
 
-Hope you find it this post useful and that it inspires you to customize gx to support your favorite package manager / programming language. If you do write your own customization please [@/DM me on Twitter](https://twitter.com/dorian_escplan) - I'm interested to hear what you come up with.
+Hope you find it this post useful and that it inspires you to customize <kbd>g</kbd><kbd>x</kbd> to support your favorite package manager / programming language. If you do write your own customization please [@/DM me on Twitter](https://twitter.com/dorian_escplan) - I'm interested to hear what you come up with.
