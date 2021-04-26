@@ -18,7 +18,7 @@ There are two options for showing progress:
 
 If you are transferring a few really big files you can use the `--progress` flag.
 
-```sh
+```bash
 rsync -ah --progress source destination
 ```
 
@@ -26,7 +26,7 @@ This will list each file as it being transferred and show you the progress and s
 
 In my case I had a lot of small files so I chose to use `--info=progress2`.
 
-```sh
+```bash
 rsync -ah --info=progress2 source destination
 ```
 

@@ -14,7 +14,7 @@ Turns out that if you install yarn through homebrew - your global directory will
 
 To correct this, first uninstall yarn from homebrew:
 
-```sh
+```bash
 brew uninstall yarn
 ```
 
@@ -23,7 +23,7 @@ Then in your `.zshrc` or equivalent remove the yarn global path (see my previous
 Now you want to find where asdf is being sourced into your .zshrc and insert a dynamic yarn global path:
 
 > ~/.zshrc
-```sh
+```bash
 # asdf global version manager
 source "$HOME/.asdf/asdf.sh"
 source "$HOME/.asdf/completions/asdf.bash"
@@ -35,7 +35,7 @@ export PATH="$(yarn global bin):$PATH"
 
 You can now install yarn again from npm which will put it in your asdf versioned node:
 
-```sh
+```bash
 npm i -g yarn
 ```
 

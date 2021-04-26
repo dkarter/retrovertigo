@@ -12,7 +12,7 @@ Using a proxy can be a good way to debug http issues. Unfourtunately setting the
 
 On Curl for example you can set the proxy using the `--proxy` flag:
 
-```sh
+```bash
 curl http://example.com --proxy 127.0.0.1:8080
 ```
 

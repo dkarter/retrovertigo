@@ -18,7 +18,7 @@ The `-t` flag removes everything from the output except the pids of the resultin
 
 In this example I used a query to return all processes listening on port 3000 and return their PID:
 
-```sh
+```bash
 lsof -ti tcp:3000
 ```
 
@@ -32,7 +32,7 @@ The output of which will look something like:
 
 This is perfect for piping into `kill` using `xargs`:
 
-```sh
+```bash
 lsof -ti tcp:3000 | xargs kill
 ```
 

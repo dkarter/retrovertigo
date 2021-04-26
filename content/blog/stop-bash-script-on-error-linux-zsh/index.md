@@ -14,7 +14,7 @@ You can write error handling for each step, but that can get quite verbose and m
 
 Fortunately bash provides another option:
 
-```sh
+```bash
 set -e
 ```
 
@@ -24,13 +24,13 @@ Caveats: this will not work in all cases, for example it does not work for short
 
 If you want it to work when one of your operations in a pipe fails you will need to add the pipefail flag (not supported on some systems `set -o | grep pipefail` to check your system):
 
-```sh
+```bash
 set -e -o pipefail
 ```
 
 If you have a script that always returns a non true return code and that's fine you can override `set -e` for that command with:
 
-```sh
+```bash
 set +e
 your_command_goes_here
 set -e

@@ -14,13 +14,13 @@ One of the methods I like to clean up is deleting unused feature branches. I do 
 
 As is common with Git there are many ways to feed a cat. Some people use this:
 
-```sh
+```bash
 git push origin :name-of-branch
 ```
 
 I prefer the more declerative way, especially for potentially destructive operations such as deleting a remote branch:
 
-```sh
+```bash
 git push origin --delete name-of-branch
 ```
 

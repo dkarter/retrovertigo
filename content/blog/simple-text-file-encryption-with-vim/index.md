@@ -10,7 +10,7 @@ canonicalUrl: https://til.hashrocket.com/posts/qkoxblhqfr-simple-text-file-encry
 
 Vim provides a simple text file encryption feature. To make use of it add the following to your .vimrc:
 
-```viml
+```vim
 set cryptmethod=blowfish2
 ```
 
@@ -18,7 +18,7 @@ This will set the encryption to the strongest algorithm vim supports.
 
 Now to use it simply start editing a file with the `-x` flag:
 
-```sh
+```bash
 $ vim -x mysecret.txt
 ```
 

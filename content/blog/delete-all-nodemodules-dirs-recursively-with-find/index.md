@@ -14,7 +14,7 @@ Often enough all you care about is the code that uses the modules and not the mo
 
 First let's do a dry run:
 
-```sh
+```bash
 find . -name "node_modules" -type d -prune
 ```
 
@@ -22,13 +22,13 @@ and now that you checked the output of the above command you can delete all the 
 
 If you are still feeling paranoid (and you're on macOS) you can simply move those to the Trash:
 
-```sh
+```bash
 find . -name "node_modules" -type d -prune -exec trash '{}' +
 ```
 
 If you feel a little braver just unlatch the airlock and toss them into a black hole 🕳 using `rm -rf`
 
-```sh
+```bash
 find . -name "node_modules" -type d -prune -exec rm -rf '{}' +
 ```
 

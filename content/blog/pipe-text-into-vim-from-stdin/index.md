@@ -11,7 +11,7 @@ canonicalUrl: https://til.hashrocket.com/posts/akcktdrn1t-pipe-text-into-vim-fro
 You can pipe text into vim directly from stdin. This can be helpful if you want to edit the output of a long bash command, or if you want to see what an installation script contains before piping it into bash.
 
 
-```sh
+```bash
 curl -fsSL https://raw.github.com/cknadler/vim-anywhere/master/install | vim -
 ```
 

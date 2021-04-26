@@ -14,7 +14,7 @@ Simply type `whatis` followed by the name of the command.
 
 Examples:
 
-```sh
+```bash
 $ whatis bc
 bc(1)         - An arbitrary precision calculator language
 $ whatis brew
@@ -26,7 +26,7 @@ brew-cask(1)  - a friendly binary installer for macOS
 
 There is also a reverse search, which searches the descriptions of commands. For example say you are looking for a calculator:
 
-```sh
+```bash
 $ apropos calculator
 bc(1)         - An arbitrary precision calculator language
 dc(1)         - an arbitrary precision calculator

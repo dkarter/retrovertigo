@@ -12,12 +12,12 @@ Recently I've been playing around with ripgrep (rg) which is a tool similar to A
 
 I noticed that when I ran a command in Ag to list all file names in a directory, and counted the number of files shown, I was getting a different number than the comparable command in ripgrep.
 
-```sh
+```bash
 ag -l -g "" | wc -l
 # =>      29
 ```
 
-```sh
+```bash
 rg -l "" | wc -l
 # =>      33
 ```
@@ -28,12 +28,12 @@ I know I can save the output into a file and then compare the two files with the
 
 This is how you would do that without writing to disk:
 
-```sh
+```bash
 diff <(ag -l -g "") <(rg -l "")
 ```
 
 The diff printed out by this command is inaccurate, so you will need to add a sort to each command:
 
-```sh
+```bash
 diff <(ag -l -g "" | sort) <(rg -l "" | sort)
 ```
