@@ -3,7 +3,8 @@ slug: pipe-all-output-from-a-command-stderr-stdout
 date: 2018-10-05 19:24:24Z
 title: "Pipe all output from a command (stderr & stdout)"
 tags: command-line
-canonical: https://til.hashrocket.com/posts/gcwwbqfmb1-pipe-all-output-from-a-command-stderr-stdout
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/gcwwbqfmb1-pipe-all-output-from-a-command-stderr-stdout
 ---
 
 

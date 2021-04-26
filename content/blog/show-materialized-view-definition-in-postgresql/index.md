@@ -3,7 +3,8 @@ slug: show-materialized-view-definition-in-postgresql
 date: 2018-05-31 20:00:15Z
 title: "Show materialized view definition in #postgresql"
 tags: sql
-canonical: https://til.hashrocket.com/posts/gh42hxndbm-show-materialized-view-definition-in-postgresql
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/gh42hxndbm-show-materialized-view-definition-in-postgresql
 ---
 
 

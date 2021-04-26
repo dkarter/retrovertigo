@@ -3,14 +3,15 @@ slug: jump-between-git-hunks-in-vim-with-vim-gitgutter
 date: 2017-12-22 08:17:44Z
 title: "Jump between #git hunks in Vim with vim-gitgutter"
 tags: vim
-canonical: https://til.hashrocket.com/posts/1xc8h959tq-jump-between-git-hunks-in-vim-with-vim-gitgutter
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/1xc8h959tq-jump-between-git-hunks-in-vim-with-vim-gitgutter
 ---
 
 
 One of my favorite Vim plugins is [vim-gitgutter](https://github.com/airblade/vim-gitgutter) - it shows gutter markings for changes in the current buffer when that file is tracked by git.
 
 It looks like this:
-![](https://i.imgur.com/WQBVbWI.png)
+![](WQBVbWI.png)
 
 `+` = new lines
 `-` = deleted line

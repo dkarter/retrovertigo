@@ -3,7 +3,8 @@ slug: pretty-print-json-in-neovimvim-using-jq
 date: 2019-08-23 19:55:39Z
 title: "Pretty-Print JSON in NeoVim/Vim using jq"
 tags: vim
-canonical: https://til.hashrocket.com/posts/uvsd8l7zes-pretty-print-json-in-neovimvim-using-jq
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/uvsd8l7zes-pretty-print-json-in-neovimvim-using-jq
 ---
 
 
@@ -15,7 +16,7 @@ canonical: https://til.hashrocket.com/posts/uvsd8l7zes-pretty-print-json-in-neov
 curl https://til.hashrocket.com/api/developer_posts.json?username=doriankarter | jq
 ```
 
-![image](https://i.imgur.com/9xqeccN.png)
+![image](9xqeccN.png)
 
 You can also use `jq` inside of NeoVim to pretty print a JSON string, right in your buffer using this command:
 
@@ -23,4 +24,4 @@ You can also use `jq` inside of NeoVim to pretty print a JSON string, right in y
 :%!jq
 ```
 
-![demo](https://i.imgur.com/DrdAbWV.gif)
+![demo](DrdAbWV.gif)

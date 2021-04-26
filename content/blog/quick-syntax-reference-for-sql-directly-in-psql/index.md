@@ -3,7 +3,8 @@ slug: quick-syntax-reference-for-sql-directly-in-psql
 date: 2018-02-18 07:45:26Z
 title: "Quick syntax reference for #SQL directly in #psql"
 tags: sql
-canonical: https://til.hashrocket.com/posts/7ikwxjzbhh-quick-syntax-reference-for-sql-directly-in-psql
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/7ikwxjzbhh-quick-syntax-reference-for-sql-directly-in-psql
 ---
 
 
@@ -17,11 +18,11 @@ It would.. and it's possible:
 \h create index
 ```
 
-![create index screenshot](https://i.imgur.com/Nm0lY3u.png)
+![create index screenshot](Nm0lY3u.png)
 
 Use `\h` followed by the SQL command - this is not the full verbose documentation that you would find on the Postgres docs website but it's more of a syntax reference - which is most of the time what you need.
 
 
 If you are not sure what to type or simply want to explore new commands try typing `\h` without anything after it - you will see something like this:
 
-![slash h by itself screenshot](https://i.imgur.com/PRIgAm5.png)
+![slash h by itself screenshot](PRIgAm5.png)

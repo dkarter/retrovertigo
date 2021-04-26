@@ -3,7 +3,8 @@ slug: get-applications-current-version-in-production
 date: 2018-04-16 00:48:10Z
 title: "Get application's current version in production"
 tags: elixir
-canonical: https://til.hashrocket.com/posts/0cbedskujk-get-applications-current-version-in-production
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/0cbedskujk-get-applications-current-version-in-production
 ---
 
 

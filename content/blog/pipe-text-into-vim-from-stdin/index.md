@@ -3,7 +3,8 @@ slug: pipe-text-into-vim-from-stdin
 date: 2018-02-18 20:59:38Z
 title: "Pipe text into Vim from stdin"
 tags: vim
-canonical: https://til.hashrocket.com/posts/akcktdrn1t-pipe-text-into-vim-from-stdin
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/akcktdrn1t-pipe-text-into-vim-from-stdin
 ---
 
 

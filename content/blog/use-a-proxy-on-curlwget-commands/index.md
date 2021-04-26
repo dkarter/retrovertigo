@@ -3,7 +3,8 @@ slug: use-a-proxy-on-curlwget-commands
 date: 2018-04-17 14:13:56Z
 title: "Use a proxy on curl/wget commands"
 tags: command-line
-canonical: https://til.hashrocket.com/posts/igveoltssz-use-a-proxy-on-curlwget-commands
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/igveoltssz-use-a-proxy-on-curlwget-commands
 ---
 
 

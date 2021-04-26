@@ -3,7 +3,8 @@ slug: get-only-pids-for-processes-listening-on-a-port
 date: 2018-09-27 16:47:47Z
 title: "Get ONLY PIDs for processes listening on a port"
 tags: command-line
-canonical: https://til.hashrocket.com/posts/agbrbajdwh-get-only-pids-for-processes-listening-on-a-port
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/agbrbajdwh-get-only-pids-for-processes-listening-on-a-port
 ---
 
 

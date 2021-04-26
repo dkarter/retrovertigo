@@ -3,7 +3,8 @@ slug: treat-words-with-dash-as-a-word-in-vim
 date: 2017-12-26 17:22:57Z
 title: "Treat words with dash as a word in Vim"
 tags: vim
-canonical: https://til.hashrocket.com/posts/t8osyzywau-treat-words-with-dash-as-a-word-in-vim
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/t8osyzywau-treat-words-with-dash-as-a-word-in-vim
 ---
 
 

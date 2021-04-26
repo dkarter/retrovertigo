@@ -3,7 +3,8 @@ slug: no-ifconfig-on-linux
 date: 2020-02-03 15:20:26Z
 title: "No ifconfig on Linux?"
 tags: command-line
-canonical: https://til.hashrocket.com/posts/5cuii1iosi-no-ifconfig-on-linux
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/5cuii1iosi-no-ifconfig-on-linux
 ---
 
 

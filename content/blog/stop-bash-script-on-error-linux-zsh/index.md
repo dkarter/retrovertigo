@@ -3,7 +3,8 @@ slug: stop-bash-script-on-error-linux-zsh
 date: 2017-11-16 18:15:36Z
 title: "Stop #bash script on error #linux #zsh"
 tags: command-line
-canonical: https://til.hashrocket.com/posts/cp1ovv8ovo-stop-bash-script-on-error-linux-zsh
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/cp1ovv8ovo-stop-bash-script-on-error-linux-zsh
 ---
 
 

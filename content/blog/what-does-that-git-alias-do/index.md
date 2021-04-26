@@ -3,7 +3,8 @@ slug: what-does-that-git-alias-do
 date: 2020-01-28 15:48:47Z
 title: "What does that git alias do? 🕵️‍♂️"
 tags: git
-canonical: https://til.hashrocket.com/posts/mnov8h5k09-what-does-that-git-alias-do-
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/mnov8h5k09-what-does-that-git-alias-do-
 ---
 
 

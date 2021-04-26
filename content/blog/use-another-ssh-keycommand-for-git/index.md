@@ -3,7 +3,8 @@ slug: use-another-ssh-keycommand-for-git
 date: 2018-10-05 19:03:31Z
 title: "Use another SSH key/command for Git"
 tags: git
-canonical: https://til.hashrocket.com/posts/kza2rh7uak-use-another-ssh-keycommand-for-git
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/kza2rh7uak-use-another-ssh-keycommand-for-git
 ---
 
 

@@ -3,7 +3,8 @@ slug: add-visual-fold-markers-to-vims-gutter
 date: 2020-01-06 03:57:48Z
 title: "Add visual fold markers to Vim's gutter"
 tags: vim
-canonical: https://til.hashrocket.com/posts/glglk0lmnl-add-visual-fold-markers-to-vims-gutter
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/glglk0lmnl-add-visual-fold-markers-to-vims-gutter
 ---
 
 
@@ -17,7 +18,7 @@ The number indicates how wide the gutter holding the fold marks should be.
 
 Here it is in action:
 
-![demo](https://i.imgur.com/wUeDB7O.gif)
+![demo](wUeDB7O.gif)
 
 This also makes the folds openable via mouse, which may be useful for some folks.
 

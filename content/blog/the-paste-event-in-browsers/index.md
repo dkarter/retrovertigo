@@ -3,7 +3,8 @@ slug: the-paste-event-in-browsers
 date: 2019-02-15 21:45:37Z
 title: "The paste event in browsers"
 tags: javascript
-canonical: https://til.hashrocket.com/posts/n3brp8chca-the-paste-event-in-browsers
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/n3brp8chca-the-paste-event-in-browsers
 ---
 
 
@@ -13,7 +14,7 @@ This event fires before any clipboard data is inserted into the document, which 
 
 In [Today I Learned](https://til.hashrocket.com) by [Hashrocket](https://hashrocket.com) we recently utilized this feature to enable pasting images straight into the post editor. The image is then uploaded to [imgur.com](https://imgur.com) and the resulting URL is pasted as a Markdown Image Tag into the textbox.
 
-![image](https://i.imgur.com/yB66TC3.gif)
+![image](yB66TC3.gif)
 
 If you are interested in adding similar functionality to your site check out [this PR](https://github.com/hashrocket/tilex/pull/337).
 

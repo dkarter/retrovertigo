@@ -3,7 +3,8 @@ slug: case-insensitive-in-query-in-postgres-psql
 date: 2018-04-23 16:55:09Z
 title: "Case insensitive `in` query in #postgres #psql"
 tags: sql
-canonical: https://til.hashrocket.com/posts/o0ohxzb7ho-case-insensitive-in-query-in-postgres-psql
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/o0ohxzb7ho-case-insensitive-in-query-in-postgres-psql
 ---
 
 

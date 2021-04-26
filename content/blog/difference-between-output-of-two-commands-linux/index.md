@@ -3,7 +3,8 @@ slug: difference-between-output-of-two-commands-linux
 date: 2018-03-10 07:36:14Z
 title: "Difference between output of two commands #linux"
 tags: command-line
-canonical: https://til.hashrocket.com/posts/capk0je8bo-difference-between-output-of-two-commands-linux
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/capk0je8bo-difference-between-output-of-two-commands-linux
 ---
 
 

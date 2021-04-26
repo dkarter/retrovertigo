@@ -3,7 +3,8 @@ slug: copy-files-with-progress-in-terminal-wrsync
 date: 2018-08-05 06:35:16Z
 title: "Copy files with progress in terminal w/rsync"
 tags: command-line
-canonical: https://til.hashrocket.com/posts/cmqpct95xk-copy-files-with-progress-in-terminal-wrsync
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/cmqpct95xk-copy-files-with-progress-in-terminal-wrsync
 ---
 
 

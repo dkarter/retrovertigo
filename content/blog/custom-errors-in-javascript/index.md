@@ -3,7 +3,8 @@ slug: custom-errors-in-javascript
 date: 2018-04-27 21:48:04Z
 title: "Custom errors in JavaScript ⚠️"
 tags: javascript
-canonical: https://til.hashrocket.com/posts/s9hur9vygj-custom-errors-in-javascript-
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/s9hur9vygj-custom-errors-in-javascript-
 ---
 
 

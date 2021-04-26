@@ -3,7 +3,8 @@ slug: enable-4k-uhd-video-streaming-in-firefox
 date: 2018-06-21 01:32:05Z
 title: "Enable 4k UHD video streaming in Firefox"
 tags: workflow
-canonical: https://til.hashrocket.com/posts/f53lj8fzab-enable-4k-uhd-video-streaming-in-firefox
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/f53lj8fzab-enable-4k-uhd-video-streaming-in-firefox
 ---
 
 
@@ -17,7 +18,7 @@ To enable it:
 2. search for `webm`
 3. double click `media.mediasource.webm.enabled`
 
-![demo](https://i.imgur.com/6WeMRJW.gif)
+![demo](6WeMRJW.gif)
 
 And now refresh YouTube 
-![result](https://i.imgur.com/ynFdxGr.gif)
+![result](ynFdxGr.gif)

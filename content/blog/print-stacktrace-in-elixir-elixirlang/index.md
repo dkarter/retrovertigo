@@ -3,7 +3,8 @@ slug: print-stacktrace-in-elixir-elixirlang
 date: 2020-03-12 18:13:04Z
 title: "Print stacktrace in Elixir #ElixirLang"
 tags: elixir
-canonical: https://til.hashrocket.com/posts/3dcv3lebql-print-stacktrace-in-elixir-elixirlang
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/3dcv3lebql-print-stacktrace-in-elixir-elixirlang
 ---
 
 

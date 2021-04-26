@@ -3,7 +3,8 @@ slug: delete-lines-from-file-with-sed
 date: 2019-05-03 19:59:40Z
 title: "Delete lines from file with sed"
 tags: command-line
-canonical: https://til.hashrocket.com/posts/dreswmoqrx-delete-lines-from-file-with-sed
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/dreswmoqrx-delete-lines-from-file-with-sed
 ---
 
 

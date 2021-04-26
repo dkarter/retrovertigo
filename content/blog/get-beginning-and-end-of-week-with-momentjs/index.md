@@ -3,7 +3,8 @@ slug: get-beginning-and-end-of-week-with-momentjs
 date: 2018-04-26 20:27:49Z
 title: "📅 Get beginning and end of week with Moment.js"
 tags: javascript
-canonical: https://til.hashrocket.com/posts/cxd9yl95ip--get-beginning-and-end-of-week-with-momentjs
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/cxd9yl95ip--get-beginning-and-end-of-week-with-momentjs
 ---
 
 

@@ -3,7 +3,8 @@ slug: delete-remote-git-branch-the-declarative-way
 date: 2019-01-18 21:03:10Z
 title: "Delete remote git branch - the declarative way"
 tags: git
-canonical: https://til.hashrocket.com/posts/ixpekrbuzw-delete-remote-git-branch-the-declarative-way
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/ixpekrbuzw-delete-remote-git-branch-the-declarative-way
 ---
 
 

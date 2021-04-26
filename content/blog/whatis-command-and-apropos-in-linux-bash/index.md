@@ -3,7 +3,8 @@ slug: whatis-command-and-apropos-in-linux-bash
 date: 2017-11-20 20:56:03Z
 title: "whatis command and apropos in #linux #bash"
 tags: command-line
-canonical: https://til.hashrocket.com/posts/ff2b9vvamf-whatis-command-and-apropos-in-linux-bash
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/ff2b9vvamf-whatis-command-and-apropos-in-linux-bash
 ---
 
 

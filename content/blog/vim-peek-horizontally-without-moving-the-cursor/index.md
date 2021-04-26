@@ -3,7 +3,8 @@ slug: vim-peek-horizontally-without-moving-the-cursor
 date: 2018-06-11 06:09:56Z
 title: "Vim: Peek horizontally without moving the cursor"
 tags: vim
-canonical: https://til.hashrocket.com/posts/c8u6ymddbv-vim-peek-horizontally-without-moving-the-cursor
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/c8u6ymddbv-vim-peek-horizontally-without-moving-the-cursor
 ---
 
 
@@ -14,6 +15,6 @@ Turning wordwrap off though, can put you in a situation where you have a line of
 Vim allows you to do that with `zs` and `ze` mappings.
 
 DEMO
-![demo](https://i.imgur.com/S4xRBaO.gif)
+![demo](S4xRBaO.gif)
 
 Learn more with `:h zs` or `:h ze`.

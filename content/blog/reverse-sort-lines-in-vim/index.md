@@ -3,7 +3,8 @@ slug: reverse-sort-lines-in-vim
 date: 2018-11-03 01:38:10Z
 title: "Reverse sort lines in Vim"
 tags: vim
-canonical: https://til.hashrocket.com/posts/kxno5ays5l-reverse-sort-lines-in-vim
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/kxno5ays5l-reverse-sort-lines-in-vim
 ---
 
 
@@ -17,5 +18,5 @@ First select the lines to be reversed in visual mode with `V` (big V) then execu
 :'<,'>!tail -r
 ```
 
-![demo](https://i.imgur.com/140zFZP.gif)
+![demo](140zFZP.gif)
 

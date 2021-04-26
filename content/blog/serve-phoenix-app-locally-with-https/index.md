@@ -3,7 +3,8 @@ slug: serve-phoenix-app-locally-with-https
 date: 2019-08-20 15:11:04Z
 title: "🔒 Serve Phoenix App Locally with HTTPS 🔒"
 tags: elixir
-canonical: https://til.hashrocket.com/posts/b8p5oalouz--serve-phoenix-app-locally-with-https-
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/b8p5oalouz--serve-phoenix-app-locally-with-https-
 ---
 
 

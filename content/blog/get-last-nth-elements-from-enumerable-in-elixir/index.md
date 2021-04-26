@@ -3,7 +3,8 @@ slug: get-last-nth-elements-from-enumerable-in-elixir
 date: 2018-06-23 04:11:56Z
 title: "Get last nth elements from Enumerable in #Elixir"
 tags: elixir
-canonical: https://til.hashrocket.com/posts/kn0qm5dnda-get-last-nth-elements-from-enumerable-in-elixir
+canonicalName: "Hashrocket TIL"
+canonicalUrl: https://til.hashrocket.com/posts/kn0qm5dnda-get-last-nth-elements-from-enumerable-in-elixir
 ---
 
 
