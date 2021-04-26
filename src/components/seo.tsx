@@ -26,13 +26,20 @@ type SEOQueryResult = {
 };
 
 type Props = {
-  canonical?: string;
+  canonicalName?: string;
+  canonicalUrl?: string;
   description?: string;
   lang?: string;
   title: string;
 };
 
-const SEO: React.FC<Props> = ({ description, lang, title, canonical }) => {
+const SEO: React.FC<Props> = ({
+  description,
+  lang,
+  title,
+  canonicalName,
+  canonicalUrl,
+}) => {
   const { site } = useStaticQuery<SEOQueryResult>(
     graphql`
       query {
@@ -86,15 +93,16 @@ const SEO: React.FC<Props> = ({ description, lang, title, canonical }) => {
     },
   ];
 
-  const canonicalLink = canonical
-    ? [
-        {
-          rel: 'canonical',
-          key: canonical,
-          href: canonical,
-        },
-      ]
-    : [];
+  const canonicalLink =
+    canonicalName && canonicalUrl
+      ? [
+          {
+            rel: 'canonical',
+            key: canonicalName,
+            href: canonicalUrl,
+          },
+        ]
+      : [];
 
   return (
     <Helmet
