@@ -22,6 +22,8 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        canonicalName
+        canonicalUrl
         date(formatString: "MMMM DD, YYYY")
         description
       }
@@ -53,6 +55,8 @@ type Post = {
   };
 
   frontmatter: {
+    canonicalName?: string;
+    canonicalUrl?: string;
     date: string;
     description?: string;
     title: string;
@@ -83,6 +87,8 @@ const BlogPostTemplate: React.FC<PageProps<DataResult>> = ({
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        canonicalName={post.frontmatter.canonicalName}
+        canonicalUrl={post.frontmatter.canonicalUrl}
       />
       <article
         className="blog-post"
@@ -92,6 +98,18 @@ const BlogPostTemplate: React.FC<PageProps<DataResult>> = ({
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
+          {post.frontmatter.canonicalName && post.frontmatter.canonicalName && (
+            <p style={{ fontSize: '1rem' }}>
+              Originally posted by me on{' '}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={post.frontmatter.canonicalUrl}
+              >
+                {post.frontmatter.canonicalName}
+              </a>
+            </p>
+          )}
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
