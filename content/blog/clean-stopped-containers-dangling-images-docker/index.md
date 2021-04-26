@@ -3,7 +3,7 @@ slug: clean-stopped-containers-dangling-images-docker
 date: 2019-05-29 16:01:20Z
 title: "Clean stopped containers & dangling images #docker"
 tags: devops
-original_link: https://til.hashrocket.com/posts/er6gdncdah-clean-stopped-containers-dangling-images-docker
+canonical: https://til.hashrocket.com/posts/er6gdncdah-clean-stopped-containers-dangling-images-docker
 ---
 
 

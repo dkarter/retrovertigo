@@ -3,7 +3,7 @@ slug: jump-between-git-hunks-in-vim-with-vim-gitgutter
 date: 2017-12-22 08:17:44Z
 title: "Jump between #git hunks in Vim with vim-gitgutter"
 tags: vim
-original_link: https://til.hashrocket.com/posts/1xc8h959tq-jump-between-git-hunks-in-vim-with-vim-gitgutter
+canonical: https://til.hashrocket.com/posts/1xc8h959tq-jump-between-git-hunks-in-vim-with-vim-gitgutter
 ---
 
 

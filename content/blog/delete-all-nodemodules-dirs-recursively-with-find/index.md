@@ -3,7 +3,7 @@ slug: delete-all-nodemodules-dirs-recursively-with-find
 date: 2018-04-21 04:11:05Z
 title: "Delete all node_modules dirs recursively with find"
 tags: command-line
-original_link: https://til.hashrocket.com/posts/planbgat39-delete-all-nodemodules-dirs-recursively-with-find
+canonical: https://til.hashrocket.com/posts/planbgat39-delete-all-nodemodules-dirs-recursively-with-find
 ---
 
 

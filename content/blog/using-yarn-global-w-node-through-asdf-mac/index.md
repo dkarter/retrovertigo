@@ -3,7 +3,7 @@ slug: using-yarn-global-w-node-through-asdf-mac
 date: 2018-05-07 16:40:14Z
 title: "Using `yarn global` w/ Node through asdf (mac)"
 tags: javascript
-original_link: https://til.hashrocket.com/posts/esd7dvzfme-using-yarn-global-w-node-through-asdf-mac
+canonical: https://til.hashrocket.com/posts/esd7dvzfme-using-yarn-global-w-node-through-asdf-mac
 ---
 
 

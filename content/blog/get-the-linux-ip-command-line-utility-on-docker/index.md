@@ -3,7 +3,7 @@ slug: get-the-linux-ip-command-line-utility-on-docker
 date: 2019-04-18 15:55:27Z
 title: "Get the linux `ip` command line utility on docker"
 tags: devops
-original_link: https://til.hashrocket.com/posts/8rq0hxc3jw-get-the-linux-ip-command-line-utility-on-docker
+canonical: https://til.hashrocket.com/posts/8rq0hxc3jw-get-the-linux-ip-command-line-utility-on-docker
 ---
 
 

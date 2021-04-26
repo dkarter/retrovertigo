@@ -3,7 +3,7 @@ slug: get-a-writable-temporary-directory-in-elixir
 date: 2019-08-20 22:28:57Z
 title: "Get a writable temporary directory in Elixir"
 tags: elixir
-original_link: https://til.hashrocket.com/posts/8rkl48vqmc-get-a-writable-temporary-directory-in-elixir
+canonical: https://til.hashrocket.com/posts/8rkl48vqmc-get-a-writable-temporary-directory-in-elixir
 ---
 
 

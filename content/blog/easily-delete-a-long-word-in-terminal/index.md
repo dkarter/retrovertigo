@@ -3,7 +3,7 @@ slug: easily-delete-a-long-word-in-terminal
 date: 2018-12-26 15:47:52Z
 title: "Easily delete a long word in terminal"
 tags: command-line
-original_link: https://til.hashrocket.com/posts/jpn9vlahfe-easily-delete-a-long-word-in-terminal
+canonical: https://til.hashrocket.com/posts/jpn9vlahfe-easily-delete-a-long-word-in-terminal
 ---
 
 

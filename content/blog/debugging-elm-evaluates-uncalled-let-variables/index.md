@@ -3,7 +3,7 @@ slug: debugging-elm-evaluates-uncalled-let-variables
 date: 2019-09-20 15:18:29Z
 title: "Debugging: Elm evaluates uncalled `let` variables"
 tags: elm
-original_link: https://til.hashrocket.com/posts/xmoarzzh6l-debugging-elm-evaluates-uncalled-let-variables
+canonical: https://til.hashrocket.com/posts/xmoarzzh6l-debugging-elm-evaluates-uncalled-let-variables
 ---
 
 

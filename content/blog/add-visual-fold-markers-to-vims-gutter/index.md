@@ -3,7 +3,7 @@ slug: add-visual-fold-markers-to-vims-gutter
 date: 2020-01-06 03:57:48Z
 title: "Add visual fold markers to Vim's gutter"
 tags: vim
-original_link: https://til.hashrocket.com/posts/glglk0lmnl-add-visual-fold-markers-to-vims-gutter
+canonical: https://til.hashrocket.com/posts/glglk0lmnl-add-visual-fold-markers-to-vims-gutter
 ---
 
 

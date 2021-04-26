@@ -3,7 +3,7 @@ slug: show-escaped-bash-color-codes-in-less-linux
 date: 2018-06-11 14:54:33Z
 title: "Show escaped bash color codes in less #linux"
 tags: command-line
-original_link: https://til.hashrocket.com/posts/mvnhzr654p-show-escaped-bash-color-codes-in-less-linux
+canonical: https://til.hashrocket.com/posts/mvnhzr654p-show-escaped-bash-color-codes-in-less-linux
 ---
 
 

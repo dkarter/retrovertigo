@@ -3,7 +3,7 @@ slug: use-pgrep-and-xargs-to-kill-processes-zsh-bash
 date: 2020-01-21 18:43:14Z
 title: "Use pgrep and xargs to kill (processes) #zsh #bash"
 tags: command-line
-original_link: https://til.hashrocket.com/posts/4k2mpniixg-use-pgrep-and-xargs-to-kill-processes-zsh-bash
+canonical: https://til.hashrocket.com/posts/4k2mpniixg-use-pgrep-and-xargs-to-kill-processes-zsh-bash
 ---
 
 

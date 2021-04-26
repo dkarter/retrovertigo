@@ -3,7 +3,7 @@ slug: postgres-automatically-appends-timezone
 date: 2018-02-18 10:06:00Z
 title: "Postgres automatically appends timezone"
 tags: sql
-original_link: https://til.hashrocket.com/posts/noktunb4zn-postgres-automatically-appends-timezone
+canonical: https://til.hashrocket.com/posts/noktunb4zn-postgres-automatically-appends-timezone
 ---
 
 

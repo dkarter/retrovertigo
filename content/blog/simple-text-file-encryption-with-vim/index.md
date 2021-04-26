@@ -3,7 +3,7 @@ slug: simple-text-file-encryption-with-vim
 date: 2017-11-29 19:53:21Z
 title: "Simple text file #encryption with Vim"
 tags: vim
-original_link: https://til.hashrocket.com/posts/qkoxblhqfr-simple-text-file-encryption-with-vim
+canonical: https://til.hashrocket.com/posts/qkoxblhqfr-simple-text-file-encryption-with-vim
 ---
 
 

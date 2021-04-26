@@ -3,7 +3,7 @@ slug: make-consolelog-stand-out-with-custom-css-style
 date: 2017-10-18 16:32:46Z
 title: "Make console.log stand out with custom css style"
 tags: javascript
-original_link: https://til.hashrocket.com/posts/4ysah1mugm-make-consolelog-stand-out-with-custom-css-style
+canonical: https://til.hashrocket.com/posts/4ysah1mugm-make-consolelog-stand-out-with-custom-css-style
 ---
 
 

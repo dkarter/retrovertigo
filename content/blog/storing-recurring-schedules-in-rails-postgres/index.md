@@ -3,7 +3,7 @@ slug: storing-recurring-schedules-in-rails-postgres
 date: 2017-10-18 16:00:56Z
 title: "Storing recurring schedules in #Rails + #Postgres"
 tags: rails
-original_link: https://til.hashrocket.com/posts/qfmz45qidl-storing-recurring-schedules-in-rails-postgres
+canonical: https://til.hashrocket.com/posts/qfmz45qidl-storing-recurring-schedules-in-rails-postgres
 ---
 
 

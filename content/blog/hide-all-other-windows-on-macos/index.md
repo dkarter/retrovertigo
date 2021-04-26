@@ -3,7 +3,7 @@ slug: hide-all-other-windows-on-macos
 date: 2018-05-31 18:14:34Z
 title: "Hide all other windows on #macOS"
 tags: workflow
-original_link: https://til.hashrocket.com/posts/7zqmrdnymz-hide-all-other-windows-on-macos
+canonical: https://til.hashrocket.com/posts/7zqmrdnymz-hide-all-other-windows-on-macos
 ---
 
 

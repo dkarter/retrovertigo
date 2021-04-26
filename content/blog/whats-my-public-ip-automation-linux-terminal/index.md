@@ -3,7 +3,7 @@ slug: whats-my-public-ip-automation-linux-terminal
 date: 2020-02-05 15:46:09Z
 title: "What's my public IP? #automation #linux #terminal"
 tags: command-line
-original_link: https://til.hashrocket.com/posts/umaybdpg4v-whats-my-public-ip-automation-linux-terminal
+canonical: https://til.hashrocket.com/posts/umaybdpg4v-whats-my-public-ip-automation-linux-terminal
 ---
 
 

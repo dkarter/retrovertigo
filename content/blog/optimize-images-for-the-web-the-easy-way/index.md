@@ -3,7 +3,7 @@ slug: optimize-images-for-the-web-the-easy-way
 date: 2019-08-08 23:17:14Z
 title: "Optimize Images for the Web the Easy Way"
 tags: design
-original_link: https://til.hashrocket.com/posts/vplgdpqnyz-optimize-images-for-the-web-the-easy-way
+canonical: https://til.hashrocket.com/posts/vplgdpqnyz-optimize-images-for-the-web-the-easy-way
 ---
 
 

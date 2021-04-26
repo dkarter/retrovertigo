@@ -3,7 +3,7 @@ slug: install-node-modules-in-subdir-without-a-cd
 date: 2019-02-01 20:53:40Z
 title: "Install node modules in subdir without a CD"
 tags: javascript
-original_link: https://til.hashrocket.com/posts/ueyckrbx7p-install-node-modules-in-subdir-without-a-cd
+canonical: https://til.hashrocket.com/posts/ueyckrbx7p-install-node-modules-in-subdir-without-a-cd
 ---
 
 

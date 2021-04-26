@@ -3,7 +3,7 @@ slug: list-all-available-extensions-in-postgres
 date: 2017-11-22 21:41:27Z
 title: "List all available extensions in #Postgres"
 tags: sql
-original_link: https://til.hashrocket.com/posts/84gq2ppkgu-list-all-available-extensions-in-postgres
+canonical: https://til.hashrocket.com/posts/84gq2ppkgu-list-all-available-extensions-in-postgres
 ---
 
 

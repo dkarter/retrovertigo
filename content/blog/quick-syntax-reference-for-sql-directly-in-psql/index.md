@@ -3,7 +3,7 @@ slug: quick-syntax-reference-for-sql-directly-in-psql
 date: 2018-02-18 07:45:26Z
 title: "Quick syntax reference for #SQL directly in #psql"
 tags: sql
-original_link: https://til.hashrocket.com/posts/7ikwxjzbhh-quick-syntax-reference-for-sql-directly-in-psql
+canonical: https://til.hashrocket.com/posts/7ikwxjzbhh-quick-syntax-reference-for-sql-directly-in-psql
 ---
 
 

@@ -3,7 +3,7 @@ slug: list-filenames-of-multiple-filetypes-in-project
 date: 2017-11-14 16:59:06Z
 title: "List filenames of multiple filetypes in project"
 tags: command-line
-original_link: https://til.hashrocket.com/posts/kxvmdlrzh2-list-filenames-of-multiple-filetypes-in-project
+canonical: https://til.hashrocket.com/posts/kxvmdlrzh2-list-filenames-of-multiple-filetypes-in-project
 ---
 
 

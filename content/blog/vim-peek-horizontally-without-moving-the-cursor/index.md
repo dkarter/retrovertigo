@@ -3,7 +3,7 @@ slug: vim-peek-horizontally-without-moving-the-cursor
 date: 2018-06-11 06:09:56Z
 title: "Vim: Peek horizontally without moving the cursor"
 tags: vim
-original_link: https://til.hashrocket.com/posts/c8u6ymddbv-vim-peek-horizontally-without-moving-the-cursor
+canonical: https://til.hashrocket.com/posts/c8u6ymddbv-vim-peek-horizontally-without-moving-the-cursor
 ---
 
 

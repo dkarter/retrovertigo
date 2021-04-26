@@ -3,7 +3,7 @@ slug: pretty-print-json-in-neovimvim-using-jq
 date: 2019-08-23 19:55:39Z
 title: "Pretty-Print JSON in NeoVim/Vim using jq"
 tags: vim
-original_link: https://til.hashrocket.com/posts/uvsd8l7zes-pretty-print-json-in-neovimvim-using-jq
+canonical: https://til.hashrocket.com/posts/uvsd8l7zes-pretty-print-json-in-neovimvim-using-jq
 ---
 
 

@@ -3,7 +3,7 @@ slug: reverse-sort-lines-in-vim
 date: 2018-11-03 01:38:10Z
 title: "Reverse sort lines in Vim"
 tags: vim
-original_link: https://til.hashrocket.com/posts/kxno5ays5l-reverse-sort-lines-in-vim
+canonical: https://til.hashrocket.com/posts/kxno5ays5l-reverse-sort-lines-in-vim
 ---
 
 

@@ -3,7 +3,7 @@ slug: the-paste-event-in-browsers
 date: 2019-02-15 21:45:37Z
 title: "The paste event in browsers"
 tags: javascript
-original_link: https://til.hashrocket.com/posts/n3brp8chca-the-paste-event-in-browsers
+canonical: https://til.hashrocket.com/posts/n3brp8chca-the-paste-event-in-browsers
 ---
 
 
