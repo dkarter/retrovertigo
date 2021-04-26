@@ -22,6 +22,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        canonical
         date(formatString: "MMMM DD, YYYY")
         description
       }
@@ -53,6 +54,7 @@ type Post = {
   };
 
   frontmatter: {
+    canonical?: string;
     date: string;
     description?: string;
     title: string;
@@ -83,6 +85,7 @@ const BlogPostTemplate: React.FC<PageProps<DataResult>> = ({
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        canonical={post.frontmatter.canonical}
       />
       <article
         className="blog-post"
