@@ -12,3 +12,5 @@ Experiments with words
 - [X] Create new post script
 - [ ] Add about me page
 - [ ] Add projects page (perhaps use github api?)
+- [ ] embedded links like notion
+- [ ] linkable headers (on hover show link icon and on click change the url)
