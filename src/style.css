@@ -298,6 +298,30 @@ kbd {
   margin-bottom: var(--spacing-4);
 }
 
+.post-list-item .post-info {
+  display: flex;
+}
+
+.post-list-item .post-info small {
+  margin-right: var(--spacing-2);
+}
+
+ul.tags {
+  list-style: none;
+  display: flex;
+}
+
+ul.tags li {
+  border-radius: 1rem;
+  background: var(--color-accent);
+  color: var(--color-text);
+  font-size: var(--fontSize-0);
+  padding: var(--spacing-0) var(--spacing-2);
+  margin-right: var(--spacing-2);
+  margin-bottom: var(--spacing-0);
+  height: max-content;
+}
+
 .header-link-home {
   font-weight: var(--fontWeight-bold);
   font-family: var(--font-heading);

@@ -4,6 +4,7 @@ import { Link, graphql, PageProps } from 'gatsby';
 import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { Tags } from '../components/Tags';
 
 type Post = {
   excerpt: string;
@@ -14,6 +15,7 @@ type Post = {
     title: string;
     date: string;
     description?: string;
+    tags?: string;
   };
 };
 
@@ -53,7 +55,7 @@ const BlogIndex: React.FC<PageProps<DataProps>> = ({ data, location }) => {
       <ol style={{ listStyle: `none` }}>
         {posts.map((post) => {
           const title = post.frontmatter.title || post.fields.slug;
-
+          const tags = (post.frontmatter.tags || '').split(',');
           return (
             <li key={post.fields.slug}>
               <article
@@ -67,7 +69,10 @@ const BlogIndex: React.FC<PageProps<DataProps>> = ({ data, location }) => {
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
+                  <div className="post-info">
+                    <small>{post.frontmatter.date}</small>
+                    <Tags tags={tags} />
+                  </div>
                 </header>
                 <section>
                   <p
@@ -105,6 +110,7 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          tags
         }
       }
     }

@@ -4,6 +4,7 @@ import { Link, graphql, PageProps } from 'gatsby';
 import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { Tags } from '../components/Tags';
 
 export const pageQuery = graphql`
   query BlogPostBySlug(
@@ -26,6 +27,7 @@ export const pageQuery = graphql`
         canonicalUrl
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
@@ -60,6 +62,7 @@ type Post = {
     date: string;
     description?: string;
     title: string;
+    tags?: string;
   };
 };
 
@@ -81,6 +84,7 @@ const BlogPostTemplate: React.FC<PageProps<DataResult>> = ({
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata?.title || `Title`;
   const { previous, next } = data;
+  const tags = (post.frontmatter.tags || '').split(',');
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -98,6 +102,7 @@ const BlogPostTemplate: React.FC<PageProps<DataResult>> = ({
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
+          <Tags tags={tags} />
           {post.frontmatter.canonicalName && post.frontmatter.canonicalName && (
             <p style={{ fontSize: '1rem' }}>
               Originally posted by me on{' '}
