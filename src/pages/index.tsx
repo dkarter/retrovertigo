@@ -4,6 +4,7 @@ import { Link, graphql, PageProps } from 'gatsby';
 import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import { Tags } from '../components/Tags';
 
 type Post = {
   excerpt: string;
@@ -70,11 +71,7 @@ const BlogIndex: React.FC<PageProps<DataProps>> = ({ data, location }) => {
                   </h2>
                   <div className="post-info">
                     <small>{post.frontmatter.date}</small>
-                    <ul className="tags">
-                      {tags.map((tag, i) => (
-                        <li key={i}>{tag}</li>
-                      ))}
-                    </ul>
+                    <Tags tags={tags} />
                   </div>
                 </header>
                 <section>

@@ -302,12 +302,12 @@ kbd {
   display: flex;
 }
 
-.post-list-item .post-info ul {
+ul.tags {
   list-style: none;
   display: flex;
 }
 
-.post-list-item .post-info ul li {
+ul.tags li {
   border-radius: 1rem;
   background: var(--color-accent);
   color: var(--color-text);
