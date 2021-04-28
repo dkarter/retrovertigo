@@ -442,6 +442,18 @@ ul.tags li {
 /* Media queries */
 
 @media (max-width: 42rem) {
+  .global-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-5);
+  }
+
+  .global-header-wrapper header {
+    margin-bottom: var(--spacing-4);
+  }
+
   blockquote {
     padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
     margin-left: var(--spacing-0);
