@@ -2,6 +2,7 @@
 slug: retrovertigo
 date: 2021-02-14
 title: "Retrovertigo"
+tags: meta
 ---
 
 # What's with the name?

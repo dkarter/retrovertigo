@@ -2,6 +2,7 @@
 slug: customize-vims-gx-mapping
 date: 2021-02-28
 title: "Customize Vim's gx mapping"
+tags: vim, elixir, npm, javascript
 ---
 
 One of my favorite Vim mappings is <kbd>g</kbd><kbd>x</kbd>. When hovering over a URL with the cursor in normal mode and using this mapping, Vim will open the URL under the cursor with your default browser.

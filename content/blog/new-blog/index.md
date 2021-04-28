@@ -3,6 +3,7 @@ slug: new-blog
 date: '2021-02-13T00:00:00.000Z'
 title: "New Blog!"
 description: "Read about why I started a new blog, technologies used, and my publishing philosophy"
+tags: meta
 ---
 
 ## Why a new blog?

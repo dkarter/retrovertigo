@@ -2,6 +2,7 @@
 slug: create-github-prs-from-jira-ticket
 date: 2021-02-24
 title: "Create Github PRs from a Jira Ticket"
+tags: workflow, automation, jira, fzf, github
 ---
 
 TL; DR: add this function to your `.bashrc`/`.zshrc` to create a PR from a Jira ticket:

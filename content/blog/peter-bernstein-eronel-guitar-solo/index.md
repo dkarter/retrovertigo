@@ -2,6 +2,7 @@
 slug: peter-bernstein-eronel-guitar-solo
 date: 2021-02-14
 title: "Peter Bernstein: Eronel Guitar Solo"
+tags: guitar, jazz, music
 ---
 
 My guitar teacher introduced me to this performance by Group 15 (Tom Aalfs,
