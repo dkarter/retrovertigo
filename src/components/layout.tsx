@@ -2,6 +2,7 @@ import React from 'react';
 import { WindowLocation } from '@reach/router';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import Image, { FixedObject } from 'gatsby-image';
+import { DarkModeToggle } from './DarkModeToggle';
 
 type Props = {
   location: WindowLocation;
@@ -69,7 +70,10 @@ const Layout: React.FC<Props> = ({ location, title, children }) => {
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
+      <div className="global-header-wrapper">
+        <header className="global-header">{header}</header>
+        <DarkModeToggle />
+      </div>
       <main>{children}</main>
       <footer>© {new Date().getFullYear()}, Dorian Karter</footer>
     </div>
