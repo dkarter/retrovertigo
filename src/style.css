@@ -442,16 +442,12 @@ ul.tags li {
 /* Media queries */
 
 @media (max-width: 42rem) {
-  .global-header-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: var(--spacing-5);
+  .global-wrapper[data-is-root-path='true'] header .site-logo {
+    display: none !important;
   }
 
-  .global-header-wrapper header {
-    margin-bottom: var(--spacing-4);
+  .global-wrapper[data-is-root-path='true'] h1 {
+    font-size: var(--fontSize-5);
   }
 
   blockquote {
