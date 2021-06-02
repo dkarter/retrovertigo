@@ -6,7 +6,11 @@
   },
   "parser": "@typescript-eslint/parser",
   "plugins": ["react", "@typescript-eslint"],
-  "extends": ["plugin:react/recommended", "eslint:recommended"],
+  "extends": [
+    "plugin:react/recommended",
+    "eslint:recommended",
+    "plugin:react-hooks/recommended"
+  ],
   "rules": {
     "react/prop-types": 0,
     "arrow-parens": 0
