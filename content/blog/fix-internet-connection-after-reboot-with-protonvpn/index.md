@@ -1,20 +1,20 @@
 ---
 slug: fix-internet-connection-after-reboot-with-protonvpn
 date: 2021-12-26
-title: "Fix internet connection after reboot with ProtonVPN"
+title: 'Fix internet connection after reboot with ProtonVPN'
 tags: linux, vpn
 ---
 
-If you're using ProtonVPN with the kill switch on a Debian based operating
-system, you may find yourself unable to connect to the internet after restarting
-your computer or resuming from sleep (if you did not disconnect from the VPN
-server first).
+If you're using ProtonVPN with the Kill Switch feature on a Debian based
+operating system (such as Ubuntu/Pop_OS!), you may find yourself unable to
+connect to the internet after restarting your computer or resuming from sleep
+(if you did not disconnect from the VPN server first).
 
 To fix this issue you will need to remove the kill switch virtual network device
 (or whatever it is..). First list all your internet connections using `nmcli`:
 
 ```bash
-nmcli connection show
+$ nmcli connection show
 ```
 
 You'll see something like this:
@@ -29,12 +29,12 @@ pvpn-ipv6leak-protection  00f7e209-2898-djkj-2892-289be298f298  dummy  ipv6leaki
 You'll need to delete the two interfaces starting with `pvpn` like so:
 
 ```bash
-nmcli connection delete pvpn-killswitch
-nmcli connection delete pvpn-ipv6leak-protection
+$ nmcli connection delete pvpn-killswitch
+$ nmcli connection delete pvpn-ipv6leak-protection
 ```
 
 And as always here's a way to script this:
 
 ```bash
-nmcli connection show | awk '{ print $1 }' | grep pvpn | xargs nmcli connection delete
+$ nmcli connection show | awk '{ print $1 }' | grep pvpn | xargs nmcli connection delete
 ```
