@@ -17,6 +17,7 @@ type BioQueryResult = {
       social: {
         github: string;
         twitter: string;
+        linkedin: string;
       };
     };
   };
@@ -41,6 +42,7 @@ const Bio = () => {
           social {
             github
             twitter
+            linkedin
           }
         }
       }
@@ -73,6 +75,10 @@ const Bio = () => {
             <a href={`https://github.com/${social?.github || ``}`}>Github</a>
             {' | '}
             <a href={`https://twitter.com/${social?.twitter || ``}`}>Twitter</a>
+            {' | '}
+            <a href={`https://www.linkedin.com/in/${social?.linkedin || ``}`}>
+              LinkedIn
+            </a>
           </p>
         </>
       )}

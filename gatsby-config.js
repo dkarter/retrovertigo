@@ -11,6 +11,7 @@ module.exports = {
     social: {
       github: 'dkarter',
       twitter: 'dorian_escplan',
+      linkedin: 'doriankarter',
     },
   },
   plugins: [
