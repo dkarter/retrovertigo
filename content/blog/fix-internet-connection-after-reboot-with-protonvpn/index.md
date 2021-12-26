@@ -2,6 +2,7 @@
 slug: fix-internet-connection-after-reboot-with-protonvpn
 date: 2021-12-26
 title: "Fix internet connection after reboot with ProtonVPN"
+tags: linux, vpn
 ---
 
 If you're using ProtonVPN with the kill switch on a Debian based operating
