@@ -28,7 +28,7 @@ export const DarkModeToggle = () => {
   const [darkModeActive, setDarkModeActive] = useState<boolean>(false);
 
   useEffect(() => {
-    setDarkModeActive(readValue());
+    setDarkModeActive(readValue() || false);
   }, []);
 
   const onToggle = ({
