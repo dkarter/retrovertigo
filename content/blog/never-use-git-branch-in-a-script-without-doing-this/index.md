@@ -2,6 +2,7 @@
 slug: never-use-git-branch-in-a-script-without-doing-this
 date: 2022-02-01
 title: "Never use `git branch` in a script without doing this!"
+tags: git, scripting, automation, workflow, fzf
 ---
 
 I like automating commands that I run often, and one of my favorite command line

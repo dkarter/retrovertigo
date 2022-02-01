@@ -2,7 +2,7 @@
 slug: borrowing-in-rust
 date: 2022-01-27
 title: "Borrowing in Rust"
-tag: rust
+tags: rust
 ---
 
 In Rust when you pass a variable to a function it is technically "moved". That means the the caller looses ownership of the variable and can no longer read or modify it. When the other function finishes running it will take care of freeing up the memory used by the variable. For example:
