@@ -21,22 +21,38 @@ tag: network, dns
 > ![](./eyeroll.gif)
 
 
-In a nutshell, DNS, or [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System) is a system used by computers to translate domain names (e.g. `example.com`) to their corresponding IP address, which is mapped to a server hosting the content you want to view[^1]. This request happens before your computer can talk to the server directly and request the specific page you are trying to view.
+In a nutshell, DNS, or [Domain Name System](https://en.wikipedia.org/wiki/Domain_Name_System) is a system used by computers to translate domain names (e.g. `example.com`) to their corresponding IP address, which is mapped to a server hosting the content you want to view[^1]. This request happens *before* your computer can talk to the server directly and contains only the domain (`example.com`), not the full URL (`example.com/blog/page.html`).
+
+You can think of DNS as a phone book with the resolving server as the switch operator.
 
 The most common DNS servers in use are usually run by Internet Service Providers (ISPs), and that's the default for most internet users who haven't customized their settings. If your work's network is tightly controlled, often that is done by the company setting the DNS of the corporate network / VPN to their own DNS server.
 
 ## Why should I care?
 
+Well for one, if it wasn't for DNS you'd have to memorize IP addresses such as `78.134.42.112` to access websites, or in the case of IP v6: `2603:243:d300:e0e:5cdd:d167:af2a:7f6`.
+
+So DNS is solving a real problem and makes it easy for developers to swap out the underlying server while keeping the domain the same and giving you stable and consistently secure results.
+
+Because of how DNS is structured it poses some concerns in regards to censorship, security and privacy.
+
 ### Censorship, Security and Privacy Considerations
-What makes DNS important is that it allows private companies such as ISPs and by extension governments to censor the websites you can access. If for example the ISP, by request of the government, or for other reasons, decides that they no longer want you to access [https://freedom.press](https://freedom.press), they can easily change their DNS server to point at another IP address, either an invalid one, or even more maliciously, their own version of the website with "state approved" content.
+Unlike most web traffic these days that uses SSL (HTTPS), DNS is by and large not encrypted and it relies on a resolving server (similar to an old phone switch operator) to funnel all requests. This design makes DNS a prime target for parental controls software, censorship, tracking, and [Man-in-the-Middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack).
 
-The Chinese Government infamously uses DNS spoofing to censor the [internet in their country](https://en.wikipedia.org/wiki/Internet_censorship_in_China#Technical_implementation) and preventing their citizens from reading about [certain targeted topics](https://en.wikipedia.org/wiki/Internet_censorship_in_the_People%27s_Republic_of_China#Targets_of_censorship).
+Since the most used resolving name servers are owned by private corporations such as ISPs, Google, CloudFlare etc, it makes it easier for those corporations, and by extension governments, censor which websites you can access.
 
-Similarly, hackers often use DNS, which is an unencrypted protocol, to not only track those around them, but also to redirect their traffic to a maliciously crafted websites. So if you are on a network you don't control (e.g. public WIFI or a fake network pretending to be a public WIFI 😉), the hacker can redirect `yourbank.com` to a VERY convincing copy of your bank's login page and steal your credentials[^2].
+If for example AT&T decides to block access to one of their (very few) competitors such as `comcast.com`, all they have to do is update their DNS resolution server to point that domain somewhere else.
+
+Similarly, if by request of the government, Comcast decides that they no longer want you to access [wikileaks.org](https://wikileaks.org/wiki/Alternative_DNS), they can easily change their DNS server to point at another IP address, either an invalid one, or even more maliciously, their own version of the website with "state approved" content.
+
+The Chinese Government infamously uses DNS spoofing to censor the [internet in their country](https://en.wikipedia.org/wiki/Internet_censorship_in_China#Technical_implementation) and preventing their citizens from reading about [certain targeted topics](https://en.wikipedia.org/wiki/Internet_censorship_in_the_People%27s_Republic_of_China#Targets_of_censorship) such as the [Tiananmen Square Massacre](https://en.wikipedia.org/wiki/1989_Tiananmen_Square_protests_and_massacre).
+
+#### Ever used public WiFi?
+Hackers often use poor network security, and the unencrypted nature of DNS, to not only track those around them, but also to redirect their traffic to a maliciously crafted website. So if you are on a network you don't control such as public WiFi (or a fake network pretending to be public WIFI 😉), the hacker can redirect `yourbank.com` to a VERY convincing copy of your bank's login page and steal your credentials[^2].
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EbetD2LMbeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+#### One Thousand Eyes
 Moreover, every time you access a website, either directly, or indirectly (some script on your computer requests a website), the DNS server can keep a record of your computer's IP and the requested domain. This data is routinely [collected and often sold](https://arstechnica.com/information-technology/2017/03/how-isps-can-sell-your-web-history-and-how-to-stop-them/). This harms your privacy because this type of metadata can help companies and governments build a profile cataloging what type of websites you visit, when, and how often. It can also be used to identify and "weed out" political dissidents.
 
 Don't get me started with the "[But](https://spreadprivacy.com/three-reasons-why-the-nothing-to-hide-argument-is-flawed/) [I](https://en.wikipedia.org/wiki/Nothing_to_hide_argument) [have](https://www.amnesty.org/en/latest/campaigns/2015/04/7-reasons-why-ive-got-nothing-to-hide-is-the-wrong-response-to-mass-surveillance/) [nothing](https://www.youtube.com/watch?v=Qn-YEvFi0Ew) [to](https://www.youtube.com/watch?v=cNb9riPyqzs) [hide](https://www.schneier.com/blog/archives/2006/05/the_value_of_pr.html)" fallacy.
@@ -55,6 +71,7 @@ There are many reasons why you might want to [run your own DNS server](https://j
 
 DNS is a request/response transaction or question/answer. Your computer asks `What's the IP for example.com?` and the DNS server answers `It's 93.184.216.34`. This is an over simplification.
 
+### What's inside the packet?
 [Julia Evans](https://twitter.com/b0rk) posted a really cool diagram/comic explaining the request/response cycle of a DNS request:
 
 [![](./dns.png)](https://wizardzines.com/comics/dns-packet/)
@@ -157,6 +174,12 @@ Since DNS is not encrypted, anyone on a public network (think Starbucks Free WIF
 While some operating systems still don't support DoH natively, you can still set up DoH via a local proxy server such as [cloudflared](https://github.com/cloudflare/cloudflared) and [Pi Hole](https://docs.pi-hole.net/guides/dns/cloudflared/).
 
 If you are using Firefox you can also [enable DoH in your browser](https://support.mozilla.org/en-US/kb/firefox-dns-over-https#w_manually-enabling-and-disabling-dns-over-https)[^3].
+
+### DNS Spoofing
+DNS Spoofing is an attack in which DNS requests can be intercepted and redirected to alternate addresses, often a malicious server.
+
+Read more of [how to perform DNS Spoofing
+attack](https://null-byte.wonderhowto.com/how-to/tutorial-dns-spoofing-0167796/)
 
 ### Additional deep dives into DNS
 Check out the rest of [Julia Evans' DNS articles](https://jvns.ca/categories/dns/).
