@@ -63,7 +63,6 @@ defmodule MyServer do
 
   @impl GenServer
   def handle_continue(:fetch_records, state) do
-    # TODO: database fetching and other async work here
     new_state = Map.put(state, :records, fetch_records())
     {:noreply, new_state}
   end
@@ -85,14 +84,12 @@ defmodule MyServer do
 
   @impl GenServer
   def handle_continue(:fetch_records, state) do
-    # TODO: database fetching and other async work here
     new_state = Map.put(state, :records, fetch_records())
     {:noreply, new_state, {:continue, :compute_meaning_of_life}}
   end
 
   @impl GenServer
   def handle_continue(:compute_meaning_of_life, state) do
-    # TODO: database fetching and other async work here
     new_state = Map.put(state, :meaning_of_life, 40 + 2)
     {:noreply, new_state}
   end
