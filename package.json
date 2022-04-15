@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "retrovertigo",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Blog by Dorian Karter (based on Gatsby starter)",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Dorian Karter",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
