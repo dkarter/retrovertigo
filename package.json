@@ -67,5 +67,9 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "lint": "yarn eslint --ext .ts,.tsx .",
     "new": "node ./scripts/new_post.js"
+  },
+  "engines": {
+    "node": ">= 17.4.0",
+    "yarn": ">= 1.22.18"
   }
 }
