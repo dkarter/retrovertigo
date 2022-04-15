@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Image, { FixedObject } from 'gatsby-image';
+import { Twitter, Linkedin, GitHub } from 'react-feather';
 
 type BioQueryResult = {
   avatar?: {
@@ -71,14 +72,29 @@ const Bio = () => {
         <>
           <p>
             Written by <strong>{author.name}</strong>, {author?.summary}
-            <br />
-            <a href={`https://github.com/${social?.github || ``}`}>Github</a>
-            {' | '}
-            <a href={`https://twitter.com/${social?.twitter || ``}`}>Twitter</a>
-            {' | '}
-            <a href={`https://www.linkedin.com/in/${social?.linkedin || ``}`}>
-              LinkedIn
-            </a>
+            <div className="social-container">
+              <a
+                href={`https://github.com/${social?.github || ``}`}
+                className="social"
+              >
+                <GitHub size={16} />
+                Github
+              </a>
+              {' | '}
+              <a
+                href={`https://twitter.com/${social?.twitter || ``}`}
+                className="social"
+              >
+                <Twitter size={16} /> Twitter
+              </a>
+              {' | '}
+              <a
+                href={`https://www.linkedin.com/in/${social?.linkedin || ``}`}
+                className="social"
+              >
+                <Linkedin size={16} /> LinkedIn
+              </a>
+            </div>
           </p>
         </>
       )}

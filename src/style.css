@@ -270,6 +270,25 @@ kbd {
 
 /* Custom classes */
 
+div.social-container {
+  display: flex;
+  align-items: baseline;
+}
+
+a.social {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+a.social:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+a.social > svg {
+  margin-right: 0.2rem;
+}
+
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
