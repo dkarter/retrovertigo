@@ -79,7 +79,7 @@ DNS is a request/response transaction or question/answer. Your computer asks `Wh
 ### DIY
 Want to see for yourself what's inside a DNS packet? Use the [dig](https://linux.die.net/man/1/dig) CLI, which is available on most Linux based systems:
 
-```sh
+```bash
 dig example.com
 ```
 
@@ -108,7 +108,7 @@ example.com.            6798    IN      A       93.184.216.34
 
 If you want to dig deeper (pun intended, deal with it!) combine `dig` with [jc](https://github.com/kellyjonbrazil/jc) and [jq](https://stedolan.github.io/jq/). After installing these tools, simply run:
 
-```sh
+```bash
 dig example.com | jc --dig | jq
 ```
 
