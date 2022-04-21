@@ -1,7 +1,8 @@
 /* light mode background */
 html code[class*='language-'],
 html pre[class*='language-'] {
-  background: #161a1d;
+  background: #2d2d2d;
+  border-radius: 0.5rem;
 }
 
 /* dark mode background */
@@ -36,14 +37,14 @@ code[class*='language-']::-moz-selection,
 pre[class*='language-']::-moz-selection,
 code[class*='language-'] ::-moz-selection,
 pre[class*='language-'] ::-moz-selection {
-  background: #363636;
+  background: #ffe993;
 }
 
 code[class*='language-']::selection,
 pre[class*='language-']::selection,
 code[class*='language-'] ::selection,
 pre[class*='language-'] ::selection {
-  background: #363636;
+  background: #ffe993;
 }
 
 :not(pre) > code[class*='language-'] {
