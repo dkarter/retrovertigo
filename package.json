@@ -43,7 +43,7 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "prettier": "^2.6.2",
-    "sharp": "^0.30.3",
+    "sharp": "^0.30.5",
     "ts-migrate": "^0.1.28",
     "typescript": "^4.6.3"
   },
