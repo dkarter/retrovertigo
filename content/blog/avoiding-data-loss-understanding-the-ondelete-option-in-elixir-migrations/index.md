@@ -2,6 +2,7 @@
 slug: avoiding-data-loss-understanding-the-ondelete-option-in-elixir-migrations
 date: 2023-01-22
 title: "Avoiding Data Loss: Understanding the `:on_delete` Option in Elixir Migrations"
+tags: elixir, ecto, postgres, sqlite, database
 ---
 
 When working with Elixir and Ecto, it is crucial to fully understand the
