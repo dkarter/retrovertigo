@@ -329,6 +329,7 @@ kbd {
 ul.tags {
   list-style: none;
   display: flex;
+  margin-left: var(--spacing-0);
 }
 
 ul.tags li {
