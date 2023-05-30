@@ -5,6 +5,7 @@ import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { Tags } from '../components/Tags';
+import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image';
 
 export const pageQuery = graphql`
   query BlogPostBySlug(
@@ -27,6 +28,15 @@ export const pageQuery = graphql`
         canonicalUrl
         date(formatString: "MMMM DD, YYYY")
         description
+        image {
+          childImageSharp {
+            gatsbyImageData(
+              breakpoints: [300, 632]
+              placeholder: BLURRED
+              formats: [AUTO, WEBP, AVIF]
+            )
+          }
+        }
         tags
       }
     }
@@ -61,6 +71,7 @@ type Post = {
     canonicalUrl?: string;
     date: string;
     description?: string;
+    image?: ImageDataLike;
     title: string;
     tags?: string;
   };
@@ -86,6 +97,8 @@ const BlogPostTemplate: React.FC<PageProps<DataResult>> = ({
   const { previous, next } = data;
   const tags = (post.frontmatter.tags || '').split(',');
 
+  const image = post.frontmatter.image && getImage(post.frontmatter.image);
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
@@ -100,6 +113,13 @@ const BlogPostTemplate: React.FC<PageProps<DataResult>> = ({
         itemType="http://schema.org/Article"
       >
         <header>
+          {image && (
+            <GatsbyImage
+              className="post-featured-image"
+              alt={post.frontmatter.title}
+              image={image}
+            />
+          )}
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
           <Tags tags={tags} />

@@ -298,6 +298,21 @@ kbd {
   margin-right: var(--spacing-2);
 }
 
+.blog-post .post-featured-image {
+  margin-bottom: 1rem;
+  border-radius: 0.2rem;
+}
+
+.post-list {
+  margin: 0;
+}
+
+.post-list .post-featured-image {
+  margin-bottom: 0.5rem;
+  border-radius: 0.2rem;
+  max-height: 10rem;
+}
+
 .post-list-item {
   margin-bottom: var(--spacing-8);
   margin-top: var(--spacing-8);

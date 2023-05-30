@@ -3,6 +3,7 @@ slug: unraveling-homebrew-dependencies-a-handy-guide
 date: 2023-05-29
 title: 'Unraveling Homebrew Dependencies: A Handy Guide'
 tags: homebrew, macOS, linux
+image: ../../assets/hops.jpg
 ---
 
 Have you ever installed something using Homebrew and noticed the command's output updating seemingly unrelated packages? This recently happened to me, and it piqued my curiosity. As a result, I embarked on a journey to understand how package dependencies work within the Homebrew universe. This post is a friendly guide to what I've discovered, which I hope will help others navigate the complex web of package dependencies.
@@ -25,7 +26,7 @@ I learned about the `brew uses` command, which is a helpful tool for exploring w
 brew uses --recursive --installed openssl@1.1
 ```
 
-```output
+```
 apr-util     exa          gnutls       libgit2      nmap         python@3.11  tmate
 autojump     ffmpeg       grpc         libpq        node         rtmpdump     tmux
 bear         freetds      krb5         libssh       openldap     ruby         unbound
@@ -109,3 +110,5 @@ It turns out that node depends on `c-ares`, and `teleport` depends on `node`. Th
 ## Conclusion
 
 Through this exploration, I acquired valuable tools that will undoubtedly come in handy for troubleshooting Homebrew package dependencies in the future. If you ever find yourself puzzled by unexpected package updates in Homebrew, I encourage you to use these commands to unravel the mysteries of package dependencies. Remember, a deeper understanding of your tools can only make you a more effective problem-solver. Happy brewing!
+
+Image: Markus Spiske via Unsplash
