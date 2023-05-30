@@ -9,13 +9,13 @@ Have you ever installed something using Homebrew and noticed the command's outpu
 
 ## Setting the Scene
 
-I installed `bear`, a utility that generates compilation databases for Clang tooling, and surprisingly, the output indicated an update for `teleport`, a completely unrelated package I use to connect to our Kubernetes clusters at work. Here's the command I used:
+I installed `bear`, a utility that generates compilation databases for the C programming language, and surprisingly, the output indicated an update for `teleport`, a completely unrelated package I use to connect to our Kubernetes clusters at work. Here's the command I used:
 
 ```bash
 brew install bear
 ```
 
-I quickly realized that teleport couldn't possibly be a direct dependency of bear. This led me to hypothesize that they might share common dependencies. But how could I confirm this? Well, this turned out to be a fantastic opportunity to learn some new commands.
+I quickly realized that `teleport` couldn't possibly be a direct dependency of `bear`. This led me to hypothesize that they might share common dependencies. But how could I confirm this? Well, this turned out to be a fantastic opportunity to learn some new commands.
 
 ## The Investigation
 
@@ -38,6 +38,10 @@ Interestingly, both `bear` and `teleport` depend on `openssl@1.1`. If `bear` and
 ## Finding Common Ground
 
 I then sought to understand how to use the diff command on Linux to show similarities, not differences. Despite trying many approaches, I found a more effective command that was new to me: comm. The man page for comm reads:
+
+```bash
+man comm
+```
 
 ```
 comm – select or reject lines common to two files
@@ -76,7 +80,7 @@ Furthermore, `teleport` depends on `node` (which also depends on `c-ares`), so t
 
 ## Digging Deeper
 
-Wanting to understand why teleport depends on c-ares, I delved further:
+Wanting to understand why `teleport` depends on `c-ares`, I delved further:
 
 ```bash
 brew deps teleport --tree
