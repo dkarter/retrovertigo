@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   siteMetadata: {
     title: 'Retrovertigo',
@@ -15,9 +16,13 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        // eslint-disable-next-line no-undef
         path: `${__dirname}/content/blog`,
         name: 'blog',
       },
@@ -25,6 +30,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        // eslint-disable-next-line no-undef
         path: `${__dirname}/content/assets`,
         name: 'assets',
       },
@@ -34,12 +40,6 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 630,
-            },
-          },
-          {
             resolve: 'gatsby-remark-responsive-iframe',
             options: {
               wrapperStyle: 'margin-bottom: 1.0725rem',
@@ -47,12 +47,9 @@ module.exports = {
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
         ],
       },
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -109,8 +106,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Gatsby Starter Blog',
-        short_name: 'GatsbyJS',
+        name: 'Retrovertigo - A blog by Dorian Karter',
+        short_name: 'Retrovertigo',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#663399',
@@ -119,8 +116,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-react-helmet',
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 };

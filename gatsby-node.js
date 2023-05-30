@@ -11,10 +11,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result = await graphql(
     `
       {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: ASC }
-          limit: 1000
-        ) {
+        allMarkdownRemark(sort: { frontmatter: { date: ASC } }, limit: 1000) {
           nodes {
             id
             fields {
@@ -23,13 +20,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           }
         }
       }
-    `,
+    `
   );
 
   if (result.errors) {
     reporter.panicOnBuild(
       'There was an error loading your blog posts',
-      result.errors,
+      result.errors
     );
     return;
   }
@@ -43,7 +40,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   if (posts.length > 0) {
     posts.forEach((post, index) => {
       const previousPostId = index === 0 ? null : posts[index - 1].id;
-      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id;
+      const nextPostId =
+        index === posts.length - 1 ? null : posts[index + 1].id;
 
       createPage({
         path: post.fields.slug,
