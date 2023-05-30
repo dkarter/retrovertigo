@@ -69,7 +69,7 @@
     "new": "node ./scripts/new_post.js"
   },
   "engines": {
-    "node": ">= 17.4.0",
+    "node": "18.x",
     "yarn": ">= 1.22.0"
   }
 }
