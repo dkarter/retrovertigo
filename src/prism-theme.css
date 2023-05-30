@@ -5,6 +5,16 @@ html pre[class*='language-'] {
   border-radius: 0.5rem;
 }
 
+p code.language-text {
+  background: lightgrey;
+  color: black;
+}
+
+html[data-theme='dark'] p code.language-text {
+  background: #5a6165;
+  color: white;
+}
+
 /* dark mode background */
 html[data-theme='dark'] code[class*='language-'],
 html[data-theme='dark'] pre[class*='language-'] {
