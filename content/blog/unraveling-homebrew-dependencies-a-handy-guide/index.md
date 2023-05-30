@@ -110,3 +110,5 @@ It turns out that node depends on `c-ares`, and `teleport` depends on `node`. Th
 ## Conclusion
 
 Through this exploration, I acquired valuable tools that will undoubtedly come in handy for troubleshooting Homebrew package dependencies in the future. If you ever find yourself puzzled by unexpected package updates in Homebrew, I encourage you to use these commands to unravel the mysteries of package dependencies. Remember, a deeper understanding of your tools can only make you a more effective problem-solver. Happy brewing!
+
+Image: Markus Spiske via Unsplash
