@@ -26,7 +26,7 @@ A web server that needs to handle multiple client connections. If one connection
 
 #### Diagram
 
-<pre class="mermaid">
+```mermaid
 flowchart LR
   classDef default fill:white,stroke:green,stroke-width:1px
   classDef restarted fill:green,color:#fff
@@ -46,12 +46,12 @@ flowchart LR
   end
 
 BEFORE --> AFTER
-</pre>
+```
 
 <details>
   <summary>Mermaid Code</summary>
 
-```mermaid
+```
 flowchart LR
   classDef default fill:white,stroke:green,stroke-width:1px
   classDef restarted fill:green,color:#fff
@@ -86,7 +86,7 @@ This strategy restarts all child processes when one of them fails. This is usefu
 
 #### Diagram
 
-<pre class="mermaid">
+```mermaid
 flowchart LR
   classDef default fill:white,stroke:green,stroke-width:1px
   classDef restarted fill:green,color:#fff
@@ -106,12 +106,12 @@ flowchart LR
   end
 
 BEFORE --> AFTER
-</pre>
+```
 
 <details>
   <summary>Mermaid Code</summary>
 
-```mermaid
+```
 flowchart LR
   classDef default fill:white,stroke:green,stroke-width:1px
   classDef restarted fill:green,color:#fff
@@ -146,7 +146,7 @@ This strategy restarts the failed child process and all child processes that wer
 
 #### Diagram
 
-<pre class="mermaid">
+```mermaid
 flowchart LR
   classDef default fill:white,stroke:green,stroke-width:1px
   classDef restarted fill:green,color:#fff
@@ -166,12 +166,12 @@ flowchart LR
   end
 
 BEFORE --> AFTER
-</pre>
+```
 
 <details>
   <summary>Mermaid Code</summary>
 
-```mermaid
+```
 flowchart LR
   classDef default fill:white,stroke:green,stroke-width:1px
   classDef restarted fill:green,color:#fff

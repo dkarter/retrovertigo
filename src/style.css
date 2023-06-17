@@ -456,7 +456,7 @@ ul.tags li {
 }
 
 /* Mermaid.js */
-pre.mermaid {
+div.mermaid {
   align-items: center;
   background: #f6f6f6;
   border-radius: 0.5rem;

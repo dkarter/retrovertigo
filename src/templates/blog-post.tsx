@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link, graphql, PageProps } from 'gatsby';
-import mermaid from 'mermaid';
 import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image';
 
 import Bio from '../components/bio';
@@ -99,11 +98,6 @@ const BlogPostTemplate: React.FC<PageProps<DataResult>> = ({
   const tags = (post.frontmatter.tags || '').split(',');
 
   const image = post.frontmatter.image && getImage(post.frontmatter.image);
-
-  // setup mermaid diagrams
-  useEffect(() => {
-    mermaid.initialize({ startOnLoad: true });
-  }, []);
 
   return (
     <Layout location={location} title={siteTitle}>
