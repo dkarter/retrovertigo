@@ -1,7 +1,7 @@
 import React from 'react';
 import { WindowLocation } from '@reach/router';
 import { Link, useStaticQuery, graphql } from 'gatsby';
-import Image, { FixedObject } from 'gatsby-image';
+import GatsbyImage, { FixedObject } from 'gatsby-image';
 import { DarkModeToggle } from './DarkModeToggle';
 
 type Props = {
@@ -53,7 +53,7 @@ const Layout: React.FC<Props> = ({ location, title, children }) => {
   if (isRootPath) {
     header = (
       <h1 className="main-heading">
-        {icon && <Image fixed={icon} alt={title} className="site-logo" />}
+        {icon && <GatsbyImage fixed={icon} alt={title} className="site-logo" />}
         <Link to="/">{title}</Link>
       </h1>
     );
@@ -61,7 +61,7 @@ const Layout: React.FC<Props> = ({ location, title, children }) => {
     header = (
       <Link className="header-link-home" to="/">
         {iconSmall && (
-          <Image fixed={iconSmall} alt={title} className="site-logo" />
+          <GatsbyImage fixed={iconSmall} alt={title} className="site-logo" />
         )}
         {title}
       </Link>

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link, graphql, PageProps } from 'gatsby';
+import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image';
 
 import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { Tags } from '../components/Tags';
-import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image';
 
 export const pageQuery = graphql`
   query BlogPostBySlug(

@@ -455,6 +455,16 @@ ul.tags li {
   width: 45px;
 }
 
+/* Mermaid.js */
+div.mermaid {
+  align-items: center;
+  background: #f6f6f6;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
 /* Media queries */
 
 @media (max-width: 42rem) {

@@ -5,12 +5,14 @@ html pre[class*='language-'] {
   border-radius: 0.5rem;
 }
 
+li code.language-text,
 p code.language-text {
   background: lightgrey;
   color: black;
 }
 
-html[data-theme='dark'] p code.language-text {
+html[data-theme='dark'] p code.language-text,
+html[data-theme='dark'] li code.language-text {
   background: #5a6165;
   color: white;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Image, { FixedObject } from 'gatsby-image';
+import GatsbyImage, { FixedObject } from 'gatsby-image';
 
 type BioQueryResult = {
   avatar?: {
@@ -58,7 +58,7 @@ const Bio = () => {
   return (
     <div className="bio">
       {avatar && (
-        <Image
+        <GatsbyImage
           fixed={avatar}
           alt={author?.name || ``}
           className="bio-avatar"
