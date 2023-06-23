@@ -29,6 +29,7 @@
     "prismjs": "^1.29.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-feather": "^2.0.10",
     "react-helmet": "^6.1.0",
     "slug": "^5.3.0",
     "typeface-merriweather": "0.0.72",
@@ -44,6 +45,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.4.0",
+    "gatsby-remark-reading-time": "^1.1.0",
     "prettier": "^2.6.2",
     "sharp": "^0.32.1",
     "typescript": "^4.6.3"
