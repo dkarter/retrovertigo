@@ -91,7 +91,6 @@ const BlogIndex: React.FC<PageProps<DataProps>> = ({ data, location }) => {
                       style={{
                         display: 'flex',
                         alignItems: 'center',
-                        gap: '0.5rem',
                       }}
                     >
                       <small>{post.frontmatter.date}</small>
