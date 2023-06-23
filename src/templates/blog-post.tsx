@@ -6,6 +6,7 @@ import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { Tags } from '../components/Tags';
+import { Clock } from 'react-feather';
 
 export const pageQuery = graphql`
   query BlogPostBySlug(
@@ -39,6 +40,12 @@ export const pageQuery = graphql`
         }
         tags
       }
+      fields {
+        slug
+        readingTime {
+          text
+        }
+      }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
       fields {
@@ -63,6 +70,9 @@ type Post = {
   excerpt: string;
   html: string;
   fields: {
+    readingTime: {
+      text: string;
+    };
     slug: string;
   };
 
@@ -121,7 +131,20 @@ const BlogPostTemplate: React.FC<PageProps<DataResult>> = ({
             />
           )}
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <div>{post.frontmatter.date}</div>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+              }}
+            >
+              <span>|</span>
+              <Clock size={16} />
+              <span>{post.fields.readingTime.text}</span>
+            </div>
+          </div>
           <Tags tags={tags} />
           {post.frontmatter.canonicalName && post.frontmatter.canonicalName && (
             <p style={{ fontSize: '1rem' }}>
