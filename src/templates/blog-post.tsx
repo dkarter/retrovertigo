@@ -6,7 +6,7 @@ import Bio from '../components/bio';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { Tags } from '../components/Tags';
-import { Clock } from 'react-feather';
+import { ReadingTime } from '../components/ReadingTime';
 
 export const pageQuery = graphql`
   query BlogPostBySlug(
@@ -131,19 +131,10 @@ const BlogPostTemplate: React.FC<PageProps<DataResult>> = ({
             />
           )}
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-            <div>{post.frontmatter.date}</div>
-            <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.5rem',
-              }}
-            >
-              <span>|</span>
-              <Clock size={16} />
-              <span>{post.fields.readingTime.text}</span>
-            </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <small>{post.frontmatter.date}</small>
+            <small>|</small>
+            <ReadingTime text={post.fields.readingTime.text} />
           </div>
           <Tags tags={tags} />
           {post.frontmatter.canonicalName && post.frontmatter.canonicalName && (

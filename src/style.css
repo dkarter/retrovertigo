@@ -333,8 +333,8 @@ kbd {
   margin-bottom: var(--spacing-4);
 }
 
-.post-list-item .post-info {
-  display: flex;
+.post-list-item .post-info > div:first-child {
+  margin-bottom: 1rem;
 }
 
 .post-list-item .post-info small {

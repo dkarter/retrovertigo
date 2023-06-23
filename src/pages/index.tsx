@@ -6,11 +6,15 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { Tags } from '../components/Tags';
 import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image';
+import { ReadingTime } from '../components/ReadingTime';
 
 type Post = {
   excerpt: string;
   fields: {
     slug: string;
+    readingTime: {
+      text: string;
+    };
   };
   frontmatter: {
     title: string;
@@ -83,7 +87,17 @@ const BlogIndex: React.FC<PageProps<DataProps>> = ({ data, location }) => {
                     </Link>
                   </h2>
                   <div className="post-info">
-                    <small>{post.frontmatter.date}</small>
+                    <div
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                      }}
+                    >
+                      <small>{post.frontmatter.date}</small>
+                      <small>|</small>
+                      <ReadingTime text={post.fields.readingTime.text} />
+                    </div>
                     <Tags tags={tags} />
                   </div>
                 </header>
@@ -118,6 +132,9 @@ export const pageQuery = graphql`
         excerpt
         fields {
           slug
+          readingTime {
+            text
+          }
         }
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
