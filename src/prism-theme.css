@@ -7,7 +7,7 @@ html pre[class*='language-'] {
 
 li code.language-text,
 p code.language-text {
-  background: lightgrey;
+  background: #ececec;
   color: black;
 }
 
@@ -62,7 +62,7 @@ pre[class*='language-'] ::selection {
 :not(pre) > code[class*='language-'] {
   white-space: normal;
   border-radius: 0.2em;
-  padding: 0.1em;
+  padding: 0 0.2em;
 }
 
 pre[class*='language-'] {
