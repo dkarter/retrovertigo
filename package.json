@@ -47,7 +47,7 @@
     "eslint-plugin-react-hooks": "^4.4.0",
     "gatsby-remark-reading-time": "^1.1.0",
     "prettier": "^2.6.2",
-    "sharp": "^0.32.1",
+    "sharp": "^0.33.0",
     "typescript": "^4.6.3"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
